@@ -1,9 +1,9 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const AuthUtil = require('../utils/auth');
-const HttpUtil = require('../utils/http');
-const Utils = require('../utils');
+const AuthUtil = require('../../utils/auth');
+const HttpUtil = require('../../utils/http');
+const Utils = require('../../utils/index');
 const BaseController = require('./BaseController');
 const Model = require('../models/User');
 const { roles } = require('../../config');

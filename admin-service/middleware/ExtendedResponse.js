@@ -1,4 +1,4 @@
-const BaseMiddleware = require('../Middleware/Base');
+const BaseMiddleware = require('../middleware/Base');
 
 /**
  * Mở rộng chức năng của response

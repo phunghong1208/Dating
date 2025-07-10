@@ -1,44 +1,94 @@
 'use strict';
 
-const express = require('express');
-const router = express.Router();
-
-// Mock controllers - bạn sẽ implement thực tế sau
-const ctrlFriend = {
-  index: (req, res) => res.json({ message: 'Get all friends endpoint' }),
-  listsByNew: (req, res) => res.json({ message: 'Get new friends endpoint' }),
-};
-
-const ctrlChatBox = {
-  getChannelId: (req, res) => res.json({ message: 'Get channel ID endpoint' }),
-  getChannels: (req, res) => res.json({ message: 'Get all channels endpoint' }),
-  removeInbox: (req, res) => res.json({ message: 'Remove inbox endpoint' }),
-  getMessages: (req, res) => res.json({ message: 'Get messages endpoint' }),
-  addMessage: (req, res) => res.json({ message: 'Add message endpoint' }),
-  sendMessage: (req, res) => res.json({ message: 'Send message endpoint' }),
-  editMessage: (req, res) => res.json({ message: 'Edit message endpoint' }),
-  removeMessage: (req, res) => res.json({ message: 'Remove message endpoint' }),
-  updateStatus: (req, res) => res.json({ message: 'Update message status endpoint' }),
-};
+const Router = require('../../admin-service/libs/Router');
+// Middleware
+const middleware = require('../middleware');
+const ExtendResponse = middleware.extendResponse;
+// header validation
+const header_validation = require('../../admin-service/routes/header_validation');
+// Controllers
+const ctrlFriend = require('../controllers/FriendController');
+const ctrlChatBox = require('../controllers/IndexController');
 
 /**
- * Chat Service routes
+ * Application routes
  */
 module.exports = app => {
-  // ==================== FRIEND MANAGEMENT ====================
-  app.get('/api/v1/friends', ctrlFriend.index);
-  app.get('/api/v1/friends/new', ctrlFriend.listsByNew);
+  app.use(header_validation);
+  app.use(ExtendResponse);
+  let router = new Router();
   
-  // ==================== CHANNEL MANAGEMENT ====================
-  app.get('/api/v1/getChannelId', ctrlChatBox.getChannelId);
-  app.get('/api/v1/channels', ctrlChatBox.getChannels);
-  app.put('/api/v1/channels/:chatId/remove', ctrlChatBox.removeInbox);
+  router.group({ prefix: '/api/v1', middlewares: [middleware.app]}, router => {
+    
+      // ==================== FRIEND MANAGEMENT ====================
+    // Lấy danh sách tất cả friends/matches của user
+    router.get('/friends', ctrlFriend.index);
+    
+    // Lấy danh sách friends mới (recent matches)
+    router.get('/friends/new', ctrlFriend.listsByNew);
+    
+    // ==================== CHANNEL MANAGEMENT ====================
+    // Lấy channel ID để tạo kết nối chat với một user
+    router.get('/getChannelId', ctrlChatBox.getChannelId);
+    
+    // Lấy danh sách tất cả channels/chat rooms của user
+    router.get('/channels', ctrlChatBox.getChannels);
+    
+    // Xóa một channel/chat room khỏi inbox
+    router.put('/channels/:chatId/remove', ctrlChatBox.removeInbox);
+    
+    // ==================== MESSAGE MANAGEMENT ====================
+    // Lấy tất cả messages trong một channel/chat room
+    router.get('/channels/:chatId/messages', ctrlChatBox.getMessages);
+    
+    // Thêm message mới vào channel cụ thể
+    router.post('/channels/:chatId/add-message', ctrlChatBox.addMessage);
+    
+    // Gửi message mới (tự động tạo channel nếu chưa có)
+    router.post('/messages/add', ctrlChatBox.sendMessage);
+    
+    // Chỉnh sửa nội dung message theo ID
+    router.put('/messages/:msgId/edit', ctrlChatBox.editMessage);
+    
+    // Xóa message theo ID
+    router.put('/messages/:msgId/remove', ctrlChatBox.removeMessage);
+    
+    // Cập nhật trạng thái message (đã đọc, đã gửi, etc.)
+    router.post('/messages/update-status', ctrlChatBox.updateStatus);  router.get('/friends', ctrlFriend.index);
+    
+    // Lấy danh sách friends mới (recent matches)
+    router.get('/friends/new', ctrlFriend.listsByNew);
+    
+    // ==================== CHANNEL MANAGEMENT ====================
+    // Lấy channel ID để tạo kết nối chat với một user
+    router.get('/getChannelId', ctrlChatBox.getChannelId);
+    
+    // Lấy danh sách tất cả channels/chat rooms của user
+    router.get('/channels', ctrlChatBox.getChannels);
+    
+    // Xóa một channel/chat room khỏi inbox
+    router.put('/channels/:chatId/remove', ctrlChatBox.removeInbox);
+    
+    // ==================== MESSAGE MANAGEMENT ====================
+    // Lấy tất cả messages trong một channel/chat room
+    router.get('/channels/:chatId/messages', ctrlChatBox.getMessages);
+    
+    // Thêm message mới vào channel cụ thể
+    router.post('/channels/:chatId/add-message', ctrlChatBox.addMessage);
+    
+    // Gửi message mới (tự động tạo channel nếu chưa có)
+    router.post('/messages/add', ctrlChatBox.sendMessage);
+    
+    // Chỉnh sửa nội dung message theo ID
+    router.put('/messages/:msgId/edit', ctrlChatBox.editMessage);
+    
+    // Xóa message theo ID
+    router.put('/messages/:msgId/remove', ctrlChatBox.removeMessage);
+    
+    // Cập nhật trạng thái message (đã đọc, đã gửi, etc.)
+    router.post('/messages/update-status', ctrlChatBox.updateStatus);
+  });
   
-  // ==================== MESSAGE MANAGEMENT ====================
-  app.get('/api/v1/channels/:chatId/messages', ctrlChatBox.getMessages);
-  app.post('/api/v1/channels/:chatId/add-message', ctrlChatBox.addMessage);
-  app.post('/api/v1/messages/add', ctrlChatBox.sendMessage);
-  app.put('/api/v1/messages/:msgId/edit', ctrlChatBox.editMessage);
-  app.put('/api/v1/messages/:msgId/remove', ctrlChatBox.removeMessage);
-  app.post('/api/v1/messages/update-status', ctrlChatBox.updateStatus);
-}; 
+  router = router.init();
+  app.use(router);
+};

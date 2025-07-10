@@ -4,7 +4,7 @@
  */
 const BaseModel = require('../models/Base');
 const Entities = require('../../shared-entities');
-const Utils = require('../utils');
+const Utils = require('../../utils');
 
 class User extends BaseModel {
   constructor() {

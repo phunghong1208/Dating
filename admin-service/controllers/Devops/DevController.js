@@ -2,7 +2,7 @@
 
 const to = require('await-to-js').default;
 const BaseController = require('../../../Base');
-const HttpUtil = require('../../utils/http');
+const HttpUtil = require('../../../utils/http');
 const Message = require('../../models/Message');
 const ServiceChannel = require('../../services/channels');
 const ServiceSocket = require('../../services/socket');

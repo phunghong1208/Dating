@@ -268,3 +268,5 @@ cd admin-service && npm install
 
    lsof -i :3001
    kill -9 12345
+
+   find . -type f -name "*.js" -exec sed -i '' "s|require('../utils/|require('../../utils/|g" {} +

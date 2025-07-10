@@ -8,7 +8,7 @@ const Customer = require('../models/Customer');
 const Images = require('../models/Image');
 const PromptAnswer = require('../models/PromptAnswer');
 
-const Utils = require('../utils');
+const Utils = require('../../utils/index');
 const {
   AI_HOST,
   AI_PORT,

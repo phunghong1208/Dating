@@ -4,8 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const { dbConnectURI, options } = require('../config/database');
 
-// Import routes
-const chatRoutes = require('./routes/chat');
+mongoose.set('strictQuery', false);
 
 const app = express();
 
@@ -15,22 +14,26 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Connect to MongoDB
-mongoose.connect(dbConnectURI, options)
-  .then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
-
-// Routes
-app.use('/', chatRoutes);
-
 // Health check
 app.get('/health', (req, res) => {
   res.json({ 
     message: 'Chat Service is running!',
     timestamp: new Date().toISOString(),
-    service: 'chat-service'
+    service: 'chat-service',
+    mongoState: mongoose.connection.readyState
   });
 });
+
+// Connect to MongoDB and then load routes
+mongoose.connect(dbConnectURI, options)
+  .then(() => {
+    const ctrlChatBox = require('./controllers/IndexController');
+    require('./routes/chat')(app, ctrlChatBox);
+  })
+  .catch(err => {
+    console.error('MongoDB connection error:', err);
+    process.exit(1);
+  });
 
 // Error handling middleware
 app.use((err, req, res, next) => {

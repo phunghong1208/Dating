@@ -3,7 +3,7 @@
 const to = require('await-to-js').default;
 const BaseController = require('./BaseController');
 const ReasonAccount = require('../models/ReasonAccount');
-const HttpUtil = require('../utils/http');
+const HttpUtil = require('../../utils/http');
 const Static = require('../models/Static');
 
 /*

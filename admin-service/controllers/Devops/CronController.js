@@ -1,6 +1,6 @@
 'use strict';
 
-const HttpUtil = require('../../utils/http');
+const HttpUtil = require('../../../utils/http');
 const BaseController = require('../BaseController');
 const Service = require('../../cronjob');
 

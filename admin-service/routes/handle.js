@@ -3,7 +3,7 @@
 const path = require('path');
 const Helper = require('./_helper');
 const Router = require('../libs/Router');
-const middleware = require('../Middleware');
+const middleware = require('../middleware');
 const requireAuth = { prefix: '/api', middlewares: [middleware.auth] };
 
 class Handler extends Helper {

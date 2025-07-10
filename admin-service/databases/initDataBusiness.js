@@ -1,7 +1,7 @@
 'use strict';
 
 const async = require('async');
-const Utils = require('../utils');
+const Utils = require('../../utils');
 
 function __x12(tableSchema, filename, key = 'code') {
   const Model = require('@models/' + tableSchema);

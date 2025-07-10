@@ -4,7 +4,7 @@
  */
 const BaseModel = require('./Base');
 const Entities = require('../../shared-entities');
-const DBUtils = require('../utils/Database');
+const DBUtils = require('../../utils/Database');
 
 class Activity extends BaseModel {
   constructor() {

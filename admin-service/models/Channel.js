@@ -5,7 +5,7 @@
 const BaseModel = require('../models/Base');
 const Entities = require('../../shared-entities');
 const Config = require('../../config');
-const Utils = require('../utils');
+const Utils = require('../../utils/index');
 
 class Channel extends BaseModel {
   constructor() {

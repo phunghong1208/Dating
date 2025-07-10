@@ -5,7 +5,7 @@ const CustomerClone = require('../models/CustomerClone');
 const Image = require('../models/Image');
 const PromptAnswer = require('../models/PromptAnswer');
 const ImageUser = require('../models/ImageUser');
-const Utils = require('../utils');
+const Utils = require('../../utils/index');
 const to = require('await-to-js').default;
 
 class Controller extends BaseController {

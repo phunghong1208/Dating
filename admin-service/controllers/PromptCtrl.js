@@ -2,7 +2,7 @@
 
 const BaseController = require('./BaseController');
 const to = require('await-to-js').default;
-const HttpUtil = require('../utils/http');
+const HttpUtil = require('../../utils/http');
 const Model = require('../models/Prompt');
 const { forEach } = require('lodash');
 

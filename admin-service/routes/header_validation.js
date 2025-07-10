@@ -1,4 +1,4 @@
-const HttpUtil = require('../utils/http');
+const HttpUtil = require('../../utils/http');
 const API_PATH_HEADER = '/api/';
 
 function setHeader(res) {

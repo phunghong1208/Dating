@@ -1,97 +1,90 @@
 version: '3.8'
 
 services:
-  # MongoDB Database
-  mongodb:
-    image: mongo:5.0
-    container_name: heartlink_mongodb
-    restart: unless-stopped
-    ports:
-      - "27017:27017"
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: $DB_USER
-      MONGO_INITDB_ROOT_PASSWORD: $DB_PASS
-      MONGO_INITDB_DATABASE: $DB_NAME
-    volumes:
-      - mongodb_data:/data/db
-    networks:
-      - heartlink_network
 
-  # App Service - Port 3001
-  app-service:
+  catalog-management:
     build:
-      context: ./app-service
-      dockerfile: Dockerfile
-    container_name: heartlink_app_service
-    restart: unless-stopped
+      context: ./backend/catalog-management
+      target: dev
     ports:
-      - "3001:3001"
-    environment:
-      - PORT=3001
-      - DB_HOST=mongodb
-      - DB_PORT=27017
-      - DB_NAME=$DB_NAME
-      - DB_USER=$DB_USER
-      - DB_PASS=$DB_PASS
-    depends_on:
-      - mongodb
-    networks:
-      - heartlink_network
+      - ${BACKEND_CATALOG_MANAGEMENT_PORT}:${BACKEND_CATALOG_MANAGEMENT_PORT}
     volumes:
-      - ./app-service:/app
+      - ./backend/catalog-management:/app:delegated
       - /app/node_modules
+    environment:
+      - PORT=${BACKEND_CATALOG_MANAGEMENT_PORT}
 
-  # Chat Service - Port 3002
-  chat-service:
+  customer-support:
     build:
-      context: ./chat-service
-      dockerfile: Dockerfile
-    container_name: heartlink_chat_service
-    restart: unless-stopped
+      context: ./backend/customer-support
+      target: dev
     ports:
-      - "3002:3002"
-    environment:
-      - PORT=3002
-      - DB_HOST=mongodb
-      - DB_PORT=27017
-      - DB_NAME=$DB_NAME
-      - DB_USER=$DB_USER
-      - DB_PASS=$DB_PASS
-    depends_on:
-      - mongodb
+      - ${BACKEND_CUSTOMER_SUPPORT_PORT}:${BACKEND_CUSTOMER_SUPPORT_PORT}
     networks:
-      - heartlink_network
+      default:
+      customer-support:
     volumes:
-      - ./chat-service:/app
+      - ./backend/customer-support:/app:delegated
       - /app/node_modules
+    environment:
+      - PORT=${BACKEND_CUSTOMER_SUPPORT_PORT}
+      - DB_USERNAME=${BACKEND_CUSTOMER_SUPPORT_DB_USERNAME}
+      - DB_PASSWORD=${BACKEND_CUSTOMER_SUPPORT_DB_PASSWORD}
+      - DB_DATABASE=${BACKEND_CUSTOMER_SUPPORT_DB_DATABASE}
+      - DB_HOST=customer-support-db
+      - ORDER_PROCESSING_BASE_URL=http://order-processing:${BACKEND_ORDER_PROCESSING_PORT}
+    depends_on:
+      - customer-support-db
+    command: ./wait-for customer-support-db:5432 -- npm run db-migrate-seed
 
-  # Admin Service - Port 3003
-  admin-service:
-    build:
-      context: ./admin-service
-      dockerfile: Dockerfile
-    container_name: heartlink_admin_service
-    restart: unless-stopped
-    ports:
-      - "3003:3003"
+  customer-support-db:
+    image: postgres:12.3
     environment:
-      - PORT=3003
-      - DB_HOST=mongodb
-      - DB_PORT=27017
-      - DB_NAME=$DB_NAME
-      - DB_USER=$DB_USER
-      - DB_PASS=$DB_PASS
-    depends_on:
-      - mongodb
+      - POSTGRES_USER=${BACKEND_CUSTOMER_SUPPORT_DB_USERNAME}
+      - POSTGRES_PASSWORD=${BACKEND_CUSTOMER_SUPPORT_DB_PASSWORD}
+      - POSTGRES_DB=${BACKEND_CUSTOMER_SUPPORT_DB_DATABASE}
     networks:
-      - heartlink_network
+      customer-support:
     volumes:
-      - ./admin-service:/app
+      - customer-support-db-data:/var/lib/postgresql/data
+
+  order-processing:
+    build:
+      context: ./backend/order-processing
+      target: dev
+    networks:
+      default:
+      order-processing:
+    volumes:
+      - ./backend/order-processing:/app:delegated
       - /app/node_modules
+    environment:
+      - PORT=${BACKEND_ORDER_PROCESSING_PORT}
+      - DB_USERNAME=${BACKEND_ORDER_PROCESSING_DB_USERNAME}
+      - DB_PASSWORD=${BACKEND_ORDER_PROCESSING_DB_PASSWORD}
+      - DB_DATABASE=${BACKEND_ORDER_PROCESSING_DB_DATABASE}
+      - DB_HOST=order-processing-db
+    depends_on:
+      - order-processing-db
+    command: ./wait-for order-processing-db:5432 -- npm run db-migrate-seed
+
+  order-processing-db:
+    image: postgres:12.3
+    environment:
+      - POSTGRES_USER=${BACKEND_ORDER_PROCESSING_DB_USERNAME}
+      - POSTGRES_PASSWORD=${BACKEND_ORDER_PROCESSING_DB_PASSWORD}
+      - POSTGRES_DB=${BACKEND_ORDER_PROCESSING_DB_DATABASE}
+    networks:
+      order-processing:
+    volumes:
+      - order-processing-db-data:/var/lib/postgresql/data
 
 networks:
-  heartlink_network:
+  customer-support:
+    driver: bridge
+  order-processing:
     driver: bridge
 
 volumes:
-  mongodb_data: 
+  customer-support-db-data:
+  order-processing-db-data:

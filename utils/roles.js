@@ -1,6 +1,6 @@
 const HttpUtil = require('./http');
 const Utils = require('./index');
-const { roles } = require('../../config');
+const { roles } = require('../config');
 
 module.exports = {
   isAdmin(authUser) {

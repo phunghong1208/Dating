@@ -1,6 +1,6 @@
 'use strict';
 
-const Utils = require('../utils');
+const Utils = require('../utils/index');
 const {
   UPLOAD_HOST,
   UPLOAD_PORT,

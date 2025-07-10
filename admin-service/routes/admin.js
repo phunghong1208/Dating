@@ -45,7 +45,7 @@ const ctrlIterate = require('../controllers/Devops/IterateController');
 const ctrlCustomerUser = require('../controllers/CustomerUserController');
 
 // Middleware
-const middleware = require('../Middleware');
+const middleware = require('../middleware');
 const ExtendResponse = middleware.extendResponse;
 // header validation
 const header_validation = require('../routes/header_validation');
