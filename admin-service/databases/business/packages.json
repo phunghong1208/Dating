@@ -1,0 +1,71 @@
+[
+  {
+    "name": "PLATINUM",
+    "description": "Priority Likes, see Who Likes You, and more",
+    "type": "package",
+    "options": {
+      "turnOffAds": true,
+      "ctrlProfile": true,
+      "ctrlWhoSeeYou": true,
+      "ctrlWhoYouSee": true,
+      "passportAnyWhere": true,
+      "priorityTop": true,
+      "unlimitedLikes": true,
+      "ctrlWhoLikeYou": true,
+      "priorityLike": true,
+      "unlimitedReturns": true,
+      "freeBoosterPerMonth": true,
+      "superLikesPerWeek": true,
+      "chatBeforeMatching": true
+    },
+    "insert": {
+      "when": "2023-04-06 09:11:00"
+    }
+  },
+  {
+    "name": "GOLD",
+    "description": "See who likes you & more!",
+    "type": "package",
+    "options": {
+      "turnOffAds": true,
+      "ctrlProfile": true,
+      "ctrlWhoSeeYou": true,
+      "ctrlWhoYouSee": true,
+      "passportAnyWhere": true,
+      "priorityTop": true,
+      "unlimitedLikes": true,
+      "ctrlWhoLikeYou": true,
+      "priorityLike": false,
+      "unlimitedReturns": true,
+      "freeBoosterPerMonth": true,
+      "superLikesPerWeek": true,
+      "chatBeforeMatching": false
+    },
+    "insert": {
+      "when": "2023-04-06 09:12:00"
+    }
+  },
+  {
+    "name": "PLUS",
+    "description": "Unlimited likes & more!",
+    "type": "package",
+    "options": {
+      "turnOffAds": true,
+      "ctrlProfile": true,
+      "ctrlWhoSeeYou": true,
+      "ctrlWhoYouSee": true,
+      "passportAnyWhere": true,
+      "priorityTop": false,
+      "unlimitedLikes": true,
+      "ctrlWhoLikeYou": false,
+      "priorityLike": false,
+      "unlimitedReturns": true,
+      "freeBoosterPerMonth": false,
+      "superLikesPerWeek": false,
+      "chatBeforeMatching": false
+    },
+    "insert": {
+      "when": "2023-04-06 09:13:00"
+    }
+  }
+]

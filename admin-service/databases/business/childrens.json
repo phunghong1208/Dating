@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "code": "item_1",
+      "langs": {
+        "en": "Don't have children",
+        "vi": "Không có con",
+        "ja": "子供がいない"
+      }
+    },
+    {
+      "code": "item_2",
+      "langs": {
+        "en": "Have children",
+        "vi": "Có trẻ em",
+        "ja": "子供がいます"
+      }
+    }
+  ]
+}

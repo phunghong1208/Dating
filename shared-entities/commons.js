@@ -1,0 +1,32 @@
+'use strict';
+/**
+ * @description Schema of Common Info for Profile Customer.
+ */
+
+module.exports = {
+  _id: String, // ULID
+  code: {
+    type: String,
+    unique: true,
+    required: true,
+    index: true,
+  },
+  langs: {
+    en: String,
+    vi: String,
+    ja: String,
+  },
+  // times
+  insert: {
+    when: { type: Date, default: Date.now, index: true },
+    by: { type: String, index: true, ref: 'User' },
+  },
+  update: {
+    when: { type: Date, index: true },
+    by: { type: String, index: true, ref: 'User' },
+  },
+  delete: {
+    when: { type: Date, index: true },
+    by: { type: String, index: true, ref: 'User' },
+  },
+};

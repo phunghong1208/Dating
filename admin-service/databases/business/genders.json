@@ -1,0 +1,26 @@
+[
+  {
+    "code": "men",
+    "langs": {
+      "en": "Men",
+      "vi": "Nam",
+      "ja": "男性"
+    }
+  },
+  {
+    "code": "women",
+    "langs": {
+      "en": "Women",
+      "vi": "Nữ",
+      "ja": "女性"
+    }
+  },
+  {
+    "code": "other",
+    "langs": {
+      "en": "Other",
+      "vi": "Khác",
+      "ja": "他の"
+    }
+  }
+]

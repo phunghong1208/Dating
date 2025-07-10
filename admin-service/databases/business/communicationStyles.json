@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "code": "item_1",
+      "langs": {
+        "en": "Big time texter",
+        "vi": "Nghiện nhắn tin",
+        "ja": "メッセージが好き"
+      }
+    },
+    {
+      "code": "item_2",
+      "langs": {
+        "en": "Video chatter",
+        "vi": "Thích gọi video",
+        "ja": "ビデオ通話派"
+      }
+    },
+    {
+      "code": "item_3",
+      "langs": {
+        "en": "Phone caller",
+        "vi": "Thích gọi điện",
+        "ja": "電話派"
+      }
+    },
+    {
+      "code": "item_4",
+      "langs": {
+        "en": "Bad texter",
+        "vi": "Ít nhắn tin",
+        "ja": "メッセージが苦手"
+      }
+    },
+    {
+      "code": "item_5",
+      "langs": {
+        "en": "Better in person",
+        "vi": "Thích gặp mặt trực tiếp",
+        "ja": "会って話すのが好き"
+      }
+    }
+  ],
+  "count": 5
+}

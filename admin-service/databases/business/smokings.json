@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "code": "item_1",
+      "langs": {
+        "en": "Social smoker",
+        "vi": "Hút thuốc với bạn bè",
+        "ja": "たまにタバコを吸う"
+      }
+    },
+    {
+      "code": "item_2",
+      "langs": {
+        "en": "Smoker when drinking",
+        "vi": "Hút thuốc khi nhậu",
+        "ja": "お酒を飲むと吸う"
+      }
+    },
+    {
+      "code": "item_3",
+      "langs": {
+        "en": "Non-smoker",
+        "vi": "Không hút thuốc",
+        "ja": "吸わない"
+      }
+    },
+    {
+      "code": "item_4",
+      "langs": {
+        "en": "Smoker",
+        "vi": "Hút thuốc thường xuyên",
+        "ja": "吸う"
+      }
+    },
+    {
+      "code": "item_5",
+      "langs": {
+        "en": "Trying to quit",
+        "vi": "Đang cố gắng bỏ",
+        "ja": "やめようとしている"
+      }
+    }
+  ],
+  "count": 5
+}

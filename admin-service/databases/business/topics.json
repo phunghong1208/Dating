@@ -1,0 +1,32 @@
+[
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/heartlink-dating-project.appspot.com/o/categorys%2Fexplore_verified_photo.png?alt=media&token=c6d3ee2c-0208-4336-962f-a0c271847ed2",
+    "description": "",
+    "name": "Verified Profile",
+    "typeExplore": 0
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/heartlink-dating-project.appspot.com/o/category%2Fexplore_looking_for_love.png?alt=media&token=592b1b6f-358c-4c41-a351-6033de5ba1f5",
+    "description": "Find someone that also looking for love as you",
+    "name": "Looking for love",
+    "typeExplore": 1
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/heartlink-dating-project.appspot.com/o/category%2Fexplore_let_be_friend.png?alt=media&token=d2b610fc-1ccb-4670-841b-5498f962a542",
+    "description": "Find your best friend here",
+    "name": "Let's be Friend",
+    "typeExplore": 1
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/heartlink-dating-project.appspot.com/o/category%2Fexplore_coffee_date.png?alt=media&token=e23993f3-401e-4a1e-9a1d-e82c68ecd477",
+    "description": "Find someone to get coffee with",
+    "name": "Coffee Date",
+    "typeExplore": 1
+  },
+  {
+    "image": "https://firebasestorage.googleapis.com/v0/b/heartlink-dating-project.appspot.com/o/category%2Fexplore_blind_date.png?alt=media&token=9627d8dd-e362-410c-9bf3-adec4ffe63a3",
+    "description": "Open hour 6pm - 12pm (Local time)",
+    "name": "Blind Date",
+    "typeExplore": 1
+  }
+]

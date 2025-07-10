@@ -1,0 +1,2405 @@
+{
+  "data": [
+    {
+      "code": "it_1",
+      "langs": {
+        "en": "90s Kid",
+        "vi": "Thế Hệ 9x",
+        "ja": "90年代生まれ"
+      }
+    },
+    {
+      "code": "it_2",
+      "langs": {
+        "en": "Harry Potter",
+        "vi": "Harry Potter",
+        "ja": "ハリー・ポッター"
+      }
+    },
+    {
+      "code": "it_3",
+      "langs": {
+        "en": "SoundCloud",
+        "vi": "SoundCloud",
+        "ja": "SoundCloud"
+      }
+    },
+    {
+      "code": "it_4",
+      "langs": {
+        "en": "Spa",
+        "vi": "Spa",
+        "ja": "スパ"
+      }
+    },
+    {
+      "code": "it_5",
+      "langs": {
+        "en": "Self Care",
+        "vi": "Chăm sóc bản thân",
+        "ja": "セルフケア"
+      }
+    },
+    {
+      "code": "it_6",
+      "langs": {
+        "en": "Heavy Metal",
+        "vi": "Heavy Metal",
+        "ja": "ヘビメタ"
+      }
+    },
+    {
+      "code": "it_7",
+      "langs": {
+        "en": "House Parties",
+        "vi": "Tiệc gia đình",
+        "ja": "ホームパーティ"
+      }
+    },
+    {
+      "code": "it_8",
+      "langs": {
+        "en": "Gin tonic",
+        "vi": "Gin Tonic",
+        "ja": "ジントニック"
+      }
+    },
+    {
+      "code": "it_9",
+      "langs": {
+        "en": "Gymnastics",
+        "vi": "Thể dục dụng cụ",
+        "ja": "体操競技"
+      }
+    },
+    {
+      "code": "it_10",
+      "langs": {
+        "en": "Hot Yoga",
+        "vi": "Hot Yoga",
+        "ja": "ホットヨガ"
+      }
+    },
+    {
+      "code": "it_11",
+      "langs": {
+        "en": "Meditation",
+        "vi": "Thiền",
+        "ja": "瞑想"
+      }
+    },
+    {
+      "code": "it_12",
+      "langs": {
+        "en": "Sushi",
+        "vi": "Sushi",
+        "ja": "寿司"
+      }
+    },
+    {
+      "code": "it_13",
+      "langs": {
+        "en": "Spotify",
+        "vi": "Spotify",
+        "ja": "Spotify"
+      }
+    },
+    {
+      "code": "it_14",
+      "langs": {
+        "en": "Hockey",
+        "vi": "Hockey",
+        "ja": "ホッケー"
+      }
+    },
+    {
+      "code": "it_15",
+      "langs": {
+        "en": "Basketball",
+        "vi": "Bóng rổ",
+        "ja": "バスケ"
+      }
+    },
+    {
+      "code": "it_16",
+      "langs": {
+        "en": "Slam Poetry",
+        "vi": "Đấu thơ",
+        "ja": "ポエトリー・スラム"
+      }
+    },
+    {
+      "code": "it_17",
+      "langs": {
+        "en": "Home Workout",
+        "vi": "Tập luyện tại nhà",
+        "ja": "自宅エクササイズ"
+      }
+    },
+    {
+      "code": "it_18",
+      "langs": {
+        "en": "Theater",
+        "vi": "Nhà hát",
+        "ja": "演劇"
+      }
+    },
+    {
+      "code": "it_19",
+      "langs": {
+        "en": "Cafe hopping",
+        "vi": "Trải nghiệm các quán cà phê",
+        "ja": "カフェ巡り"
+      }
+    },
+    {
+      "code": "it_20",
+      "langs": {
+        "en": "Aquarium",
+        "vi": "Thủy cung",
+        "ja": "水族館"
+      }
+    },
+    {
+      "code": "it_21",
+      "langs": {
+        "en": "Sneakers",
+        "vi": "Giày Sneaker",
+        "ja": "スニーカー"
+      }
+    },
+    {
+      "code": "it_22",
+      "langs": {
+        "en": "Instagram",
+        "vi": "Instagram",
+        "ja": "Instagram"
+      }
+    },
+    {
+      "code": "it_23",
+      "langs": {
+        "en": "Hot Springs",
+        "vi": "Suối nước nóng",
+        "ja": "温泉めぐり"
+      }
+    },
+    {
+      "code": "it_24",
+      "langs": {
+        "en": "Walking",
+        "vi": "Đi dạo",
+        "ja": "散歩"
+      }
+    },
+    {
+      "code": "it_25",
+      "langs": {
+        "en": "Running",
+        "vi": "Chạy bộ",
+        "ja": "ランニング"
+      }
+    },
+    {
+      "code": "it_26",
+      "langs": {
+        "en": "Travel",
+        "vi": "Du lịch",
+        "ja": "旅行"
+      }
+    },
+    {
+      "code": "it_27",
+      "langs": {
+        "en": "Language Exchange",
+        "vi": "Giao lưu ngôn ngữ",
+        "ja": "語学"
+      }
+    },
+    {
+      "code": "it_28",
+      "langs": {
+        "en": "Movies",
+        "vi": "Phim ảnh",
+        "ja": "映画鑑賞"
+      }
+    },
+    {
+      "code": "it_29",
+      "langs": {
+        "en": "Guitarists",
+        "vi": "Chơi guitar",
+        "ja": "ギター"
+      }
+    },
+    {
+      "code": "it_30",
+      "langs": {
+        "en": "Social Development",
+        "vi": "Phát triển xã hội",
+        "ja": "社会的発展"
+      }
+    },
+    {
+      "code": "it_31",
+      "langs": {
+        "en": "Gym",
+        "vi": "Tập gym",
+        "ja": "筋トレ"
+      }
+    },
+    {
+      "code": "it_32",
+      "langs": {
+        "en": "Social Media",
+        "vi": "Mạng Xã hội",
+        "ja": "SNS"
+      }
+    },
+    {
+      "code": "it_33",
+      "langs": {
+        "en": "Hip Hop",
+        "vi": "Hip Hop",
+        "ja": "ヒップホップ"
+      }
+    },
+    {
+      "code": "it_34",
+      "langs": {
+        "en": "Skincare",
+        "vi": "Chăm sóc da",
+        "ja": "スキンケア"
+      }
+    },
+    {
+      "code": "it_35",
+      "langs": {
+        "en": "J-Pop",
+        "vi": "J-Pop",
+        "ja": "J-POP"
+      }
+    },
+    {
+      "code": "it_36",
+      "langs": {
+        "en": "Shisha",
+        "vi": "Shisha",
+        "ja": "シーシャ"
+      }
+    },
+    {
+      "code": "it_37",
+      "langs": {
+        "en": "Cricket",
+        "vi": "Cricket",
+        "ja": "クリケット"
+      }
+    },
+    {
+      "code": "it_38",
+      "langs": {
+        "en": "Korean Dramas",
+        "vi": "Phim truyền hình Hàn Quốc",
+        "ja": "韓国ドラマ"
+      }
+    },
+    {
+      "code": "it_39",
+      "langs": {
+        "en": "Freelance",
+        "vi": "Làm việc tự do",
+        "ja": "フリーランス"
+      }
+    },
+    {
+      "code": "it_40",
+      "langs": {
+        "en": "K-Pop",
+        "vi": "K-Pop",
+        "ja": "K-POP"
+      }
+    },
+    {
+      "code": "it_41",
+      "langs": {
+        "en": "Skateboarding",
+        "vi": "Trượt ván",
+        "ja": "スケートボード"
+      }
+    },
+    {
+      "code": "it_42",
+      "langs": {
+        "en": "Gospel",
+        "vi": "Gospel",
+        "ja": "ゴスペル"
+      }
+    },
+    {
+      "code": "it_43",
+      "langs": {
+        "en": "Group X",
+        "vi": "Group X",
+        "ja": "Group X"
+      }
+    },
+    {
+      "code": "it_44",
+      "langs": {
+        "en": "Potterhead",
+        "vi": "Potterhead",
+        "ja": "ハリーポッター"
+      }
+    },
+    {
+      "code": "it_45",
+      "langs": {
+        "en": "Trying New Things",
+        "vi": "Thử những thứ mới",
+        "ja": "新しいもの好き"
+      }
+    },
+    {
+      "code": "it_46",
+      "langs": {
+        "en": "Photography",
+        "vi": "Nhiếp ảnh",
+        "ja": "カメラ"
+      }
+    },
+    {
+      "code": "it_47",
+      "langs": {
+        "en": "Bollywood",
+        "vi": "Bollywood",
+        "ja": "ボリウッド"
+      }
+    },
+    {
+      "code": "it_48",
+      "langs": {
+        "en": "Reading",
+        "vi": "Đọc sách",
+        "ja": "読書"
+      }
+    },
+    {
+      "code": "it_49",
+      "langs": {
+        "en": "Singing",
+        "vi": "Hát",
+        "ja": "歌"
+      }
+    },
+    {
+      "code": "it_50",
+      "langs": {
+        "en": "Sports",
+        "vi": "Thể thao",
+        "ja": "スポーツ観戦"
+      }
+    },
+    {
+      "code": "it_51",
+      "langs": {
+        "en": "Poetry",
+        "vi": "Thơ",
+        "ja": "ポエム"
+      }
+    },
+    {
+      "code": "it_52",
+      "langs": {
+        "en": "Stand up Comedy",
+        "vi": "Hài độc thoại",
+        "ja": "コメディ"
+      }
+    },
+    {
+      "code": "it_53",
+      "langs": {
+        "en": "Coffee",
+        "vi": "Cafe",
+        "ja": "コーヒー"
+      }
+    },
+    {
+      "code": "it_54",
+      "langs": {
+        "en": "Karaoke",
+        "vi": "Karaoke",
+        "ja": "カラオケ"
+      }
+    },
+    {
+      "code": "it_55",
+      "langs": {
+        "en": "Fortnite",
+        "vi": "Fortnite",
+        "ja": "フォートナイト"
+      }
+    },
+    {
+      "code": "it_56",
+      "langs": {
+        "en": "Free Diving",
+        "vi": "Lặn tự do",
+        "ja": "フリーダイビング"
+      }
+    },
+    {
+      "code": "it_57",
+      "langs": {
+        "en": "Self Development",
+        "vi": "Phát triển bản thân",
+        "ja": "自己開発"
+      }
+    },
+    {
+      "code": "it_58",
+      "langs": {
+        "en": "Mental Health Awareness",
+        "vi": "Nhận thức về sức khỏe tâm thần",
+        "ja": "メンタルヘルス"
+      }
+    },
+    {
+      "code": "it_59",
+      "langs": {
+        "en": "Foodie Tour",
+        "vi": "Tour ẩm thực",
+        "ja": "食べ歩き"
+      }
+    },
+    {
+      "code": "it_60",
+      "langs": {
+        "en": "Voter Rights",
+        "vi": "Quyền cử tri",
+        "ja": "選挙権"
+      }
+    },
+    {
+      "code": "it_61",
+      "langs": {
+        "en": "Jiu-jitsu",
+        "vi": "Jiu-jitsu",
+        "ja": "柔術"
+      }
+    },
+    {
+      "code": "it_62",
+      "langs": {
+        "en": "Climate Change",
+        "vi": "Biến đổi khí hậu",
+        "ja": "気候変動"
+      }
+    },
+    {
+      "code": "it_63",
+      "langs": {
+        "en": "Exhibition",
+        "vi": "Triển lãm trưng bày",
+        "ja": "展覧会"
+      }
+    },
+    {
+      "code": "it_64",
+      "langs": {
+        "en": "Walking My Dog",
+        "vi": "Dắt chó đi dạo",
+        "ja": "犬と散歩"
+      }
+    },
+    {
+      "code": "it_65",
+      "langs": {
+        "en": "LGBTQ+ Rights",
+        "vi": "Quyền cho cộng đồng LGBTQ+",
+        "ja": "LGBTQ+の権利"
+      }
+    },
+    {
+      "code": "it_66",
+      "langs": {
+        "en": "Feminism",
+        "vi": "Nữ quyền",
+        "ja": "フェミニスト"
+      }
+    },
+    {
+      "code": "it_67",
+      "langs": {
+        "en": "VR Room",
+        "vi": "Phòng thực tế ảo",
+        "ja": "VRルーム"
+      }
+    },
+    {
+      "code": "it_68",
+      "langs": {
+        "en": "Escape Cafe",
+        "vi": "Escape Café",
+        "ja": "脱出ゲーム"
+      }
+    },
+    {
+      "code": "it_69",
+      "langs": {
+        "en": "Shopping",
+        "vi": "Mua sắm",
+        "ja": "ショッピング"
+      }
+    },
+    {
+      "code": "it_70",
+      "langs": {
+        "en": "Brunch",
+        "vi": "Bữa brunch",
+        "ja": "ブランチ"
+      }
+    },
+    {
+      "code": "it_71",
+      "langs": {
+        "en": "Investment",
+        "vi": "Đầu tư",
+        "ja": "投資"
+      }
+    },
+    {
+      "code": "it_72",
+      "langs": {
+        "en": "Jetski",
+        "vi": "Mô tô nước",
+        "ja": "ジェットスキー"
+      }
+    },
+    {
+      "code": "it_73",
+      "langs": {
+        "en": "Reggaeton",
+        "vi": "Dòng nhạc Reggaeton",
+        "ja": "レゲトン"
+      }
+    },
+    {
+      "code": "it_74",
+      "langs": {
+        "en": "Second-hand apparel",
+        "vi": "Quần áo second-hand",
+        "ja": "古着"
+      }
+    },
+    {
+      "code": "it_75",
+      "langs": {
+        "en": "Black Lives Matter",
+        "vi": "Đấu tranh cho Người Da Đen",
+        "ja": "ブラック・ライヴズ・マター"
+      }
+    },
+    {
+      "code": "it_76",
+      "langs": {
+        "en": "Jogging",
+        "vi": "Chạy bộ",
+        "ja": "ジョギング"
+      }
+    },
+    {
+      "code": "it_77",
+      "langs": {
+        "en": "Road Trips",
+        "vi": "Phượt",
+        "ja": "ロードトリップ"
+      }
+    },
+    {
+      "code": "it_78",
+      "langs": {
+        "en": "Vintage fashion",
+        "vi": "Thời trang Vintage",
+        "ja": "ヴィンテージファッション"
+      }
+    },
+    {
+      "code": "it_79",
+      "langs": {
+        "en": "Voguing",
+        "vi": "Vũ điệu Vogue",
+        "ja": "ヴォーグダンス"
+      }
+    },
+    {
+      "code": "it_80",
+      "langs": {
+        "en": "Couchsurfing",
+        "vi": "Du lịch Couchsurfing",
+        "ja": "カウチサーフィン"
+      }
+    },
+    {
+      "code": "it_81",
+      "langs": {
+        "en": "Happy hour",
+        "vi": "Happy Hour",
+        "ja": "カクテル"
+      }
+    },
+    {
+      "code": "it_82",
+      "langs": {
+        "en": "Inclusivity",
+        "vi": "Sự hòa nhập",
+        "ja": "インクルージョン"
+      }
+    },
+    {
+      "code": "it_83",
+      "langs": {
+        "en": "Country Music",
+        "vi": "Nhạc đồng quê",
+        "ja": "カントリーミュージック"
+      }
+    },
+    {
+      "code": "it_84",
+      "langs": {
+        "en": "Football",
+        "vi": "Bóng đá",
+        "ja": "アメフト"
+      }
+    },
+    {
+      "code": "it_85",
+      "langs": {
+        "en": "Inline Skate",
+        "vi": "Trượt patin",
+        "ja": "インラインスケート"
+      }
+    },
+    {
+      "code": "it_86",
+      "langs": {
+        "en": "Investing",
+        "vi": "Đầu tư",
+        "ja": "投資"
+      }
+    },
+    {
+      "code": "it_87",
+      "langs": {
+        "en": "Tennis",
+        "vi": "Quần vợt",
+        "ja": "テニス"
+      }
+    },
+    {
+      "code": "it_88",
+      "langs": {
+        "en": "Ice Cream",
+        "vi": "Kem",
+        "ja": "アイスクリーム"
+      }
+    },
+    {
+      "code": "it_89",
+      "langs": {
+        "en": "Ice Skating",
+        "vi": "Trượt băng",
+        "ja": "アイススケート"
+      }
+    },
+    {
+      "code": "it_90",
+      "langs": {
+        "en": "Human Rights",
+        "vi": "Quyền con người",
+        "ja": "人権"
+      }
+    },
+    {
+      "code": "it_91",
+      "langs": {
+        "en": "Expositions",
+        "vi": "Triển lãm",
+        "ja": "博覧会"
+      }
+    },
+    {
+      "code": "it_92",
+      "langs": {
+        "en": "Pig Roast",
+        "vi": "Lợn quay",
+        "ja": "豚の丸焼き"
+      }
+    },
+    {
+      "code": "it_93",
+      "langs": {
+        "en": "Skiing",
+        "vi": "Trượt tuyết",
+        "ja": "スキー"
+      }
+    },
+    {
+      "code": "it_94",
+      "langs": {
+        "en": "Canoeing",
+        "vi": "Chèo cano",
+        "ja": "カヌー"
+      }
+    },
+    {
+      "code": "it_95",
+      "langs": {
+        "en": "West End Musicals",
+        "vi": "Nhạc kịch West End",
+        "ja": "ミュージカル"
+      }
+    },
+    {
+      "code": "it_96",
+      "langs": {
+        "en": "Snowboarding",
+        "vi": "Trượt ván tuyết",
+        "ja": "スノボ"
+      }
+    },
+    {
+      "code": "it_97",
+      "langs": {
+        "en": "Pilates",
+        "vi": "Pilates",
+        "ja": "ピラティス"
+      }
+    },
+    {
+      "code": "it_98",
+      "langs": {
+        "en": "Pentathlon",
+        "vi": "Năm môn phối hợp",
+        "ja": "五種競技"
+      }
+    },
+    {
+      "code": "it_99",
+      "langs": {
+        "en": "Broadway",
+        "vi": "Sân khấu Broadway",
+        "ja": "ブロードウェイ"
+      }
+    },
+    {
+      "code": "it_100",
+      "langs": {
+        "en": "PlayStation",
+        "vi": "PlayStation",
+        "ja": "PlayStation"
+      }
+    },
+    {
+      "code": "it_101",
+      "langs": {
+        "en": "Cheerleading",
+        "vi": "Cheerleading",
+        "ja": "チアリーディング"
+      }
+    },
+    {
+      "code": "it_102",
+      "langs": {
+        "en": "Choir",
+        "vi": "Hợp xướng",
+        "ja": "合唱"
+      }
+    },
+    {
+      "code": "it_103",
+      "langs": {
+        "en": "Pole Dancing",
+        "vi": "Múa cột",
+        "ja": "ポールダンス"
+      }
+    },
+    {
+      "code": "it_104",
+      "langs": {
+        "en": "Five-a-side Football",
+        "vi": "Bóng đá mini",
+        "ja": "5人制サッカー"
+      }
+    },
+    {
+      "code": "it_105",
+      "langs": {
+        "en": "Car Racing",
+        "vi": "Đua xe ô tô",
+        "ja": "自動車レース"
+      }
+    },
+    {
+      "code": "it_106",
+      "langs": {
+        "en": "Pinterest",
+        "vi": "Pinterest",
+        "ja": "Pinterest"
+      }
+    },
+    {
+      "code": "it_107",
+      "langs": {
+        "en": "Festivals",
+        "vi": "Lễ hội",
+        "ja": "フェス"
+      }
+    },
+    {
+      "code": "it_108",
+      "langs": {
+        "en": "Pub Quiz",
+        "vi": "Trò câu đố tại quán rượu",
+        "ja": "パブクイズ"
+      }
+    },
+    {
+      "code": "it_109",
+      "langs": {
+        "en": "Catan",
+        "vi": "Catan",
+        "ja": "カタン"
+      }
+    },
+    {
+      "code": "it_110",
+      "langs": {
+        "en": "Cosplay",
+        "vi": "Cosplay",
+        "ja": "コスプレ"
+      }
+    },
+    {
+      "code": "it_111",
+      "langs": {
+        "en": "Motor Sports",
+        "vi": "Đua motor thể thao",
+        "ja": "モータースポーツ"
+      }
+    },
+    {
+      "code": "it_112",
+      "langs": {
+        "en": "Coffee Stall",
+        "vi": "Quán cafe",
+        "ja": "コーヒースタンド"
+      }
+    },
+    {
+      "code": "it_113",
+      "langs": {
+        "en": "E-Sports",
+        "vi": "Thể thao điện tử",
+        "ja": "eスポーツ"
+      }
+    },
+    {
+      "code": "it_114",
+      "langs": {
+        "en": "Content Creation",
+        "vi": "Sáng tạo Nội dung",
+        "ja": "コンテンツ作成"
+      }
+    },
+    {
+      "code": "it_115",
+      "langs": {
+        "en": "Bicycle Racing",
+        "vi": "Đua xe đạp",
+        "ja": "自転車レース"
+      }
+    },
+    {
+      "code": "it_116",
+      "langs": {
+        "en": "Binge-Watching TV shows",
+        "vi": "Cày TV show",
+        "ja": "テレビ番組の一気見"
+      }
+    },
+    {
+      "code": "it_117",
+      "langs": {
+        "en": "Songwriter",
+        "vi": "Sáng tác nhạc",
+        "ja": "ソングライター"
+      }
+    },
+    {
+      "code": "it_118",
+      "langs": {
+        "en": "Bodycombat",
+        "vi": "Body Combat",
+        "ja": "ボディコンバット"
+      }
+    },
+    {
+      "code": "it_119",
+      "langs": {
+        "en": "Tattoos",
+        "vi": "Hình xăm",
+        "ja": "タトゥー"
+      }
+    },
+    {
+      "code": "it_120",
+      "langs": {
+        "en": "Painting",
+        "vi": "Sơn",
+        "ja": "絵画"
+      }
+    },
+    {
+      "code": "it_121",
+      "langs": {
+        "en": "Bodyjam",
+        "vi": "Body Jam",
+        "ja": "ボディジャム"
+      }
+    },
+    {
+      "code": "it_122",
+      "langs": {
+        "en": "Paddle Boarding",
+        "vi": "Chèo ván SUP",
+        "ja": "SUP"
+      }
+    },
+    {
+      "code": "it_123",
+      "langs": {
+        "en": "Padel",
+        "vi": "Padel",
+        "ja": "パデル"
+      }
+    },
+    {
+      "code": "it_124",
+      "langs": {
+        "en": "Blackpink",
+        "vi": "Blackpink",
+        "ja": "Blackpink"
+      }
+    },
+    {
+      "code": "it_125",
+      "langs": {
+        "en": "Surfing",
+        "vi": "Lướt sóng",
+        "ja": "サーフィン"
+      }
+    },
+    {
+      "code": "it_126",
+      "langs": {
+        "en": "Bowling",
+        "vi": "Chơi bowling",
+        "ja": "ボウリング"
+      }
+    },
+    {
+      "code": "it_127",
+      "langs": {
+        "en": "Grime",
+        "vi": "Nhạc điện tử Grime",
+        "ja": "グライム"
+      }
+    },
+    {
+      "code": "it_128",
+      "langs": {
+        "en": "90s Britpop",
+        "vi": "Nhạc Pop UK thập niên 90",
+        "ja": "90年代のブリットポップ"
+      }
+    },
+    {
+      "code": "it_129",
+      "langs": {
+        "en": "Bodypump",
+        "vi": "Body Pump",
+        "ja": "ボディパンプ"
+      }
+    },
+    {
+      "code": "it_130",
+      "langs": {
+        "en": "Beach Bars",
+        "vi": "Bar bên bờ biển",
+        "ja": "ビーチバー"
+      }
+    },
+    {
+      "code": "it_131",
+      "langs": {
+        "en": "Bodystep",
+        "vi": "Body Step",
+        "ja": "ボディステップ"
+      }
+    },
+    {
+      "code": "it_132",
+      "langs": {
+        "en": "Paragliding",
+        "vi": "Dù lượn",
+        "ja": "パラグライダー"
+      }
+    },
+    {
+      "code": "it_133",
+      "langs": {
+        "en": "Upcycling",
+        "vi": "Upcycling",
+        "ja": "アップサイクリング"
+      }
+    },
+    {
+      "code": "it_134",
+      "langs": {
+        "en": "V-Pop",
+        "vi": "V-Pop",
+        "ja": "V-POP"
+      }
+    },
+    {
+      "code": "it_135",
+      "langs": {
+        "en": "Equality",
+        "vi": "Sự bình đẳng",
+        "ja": "平等な権利"
+      }
+    },
+    {
+      "code": "it_136",
+      "langs": {
+        "en": "Astrology",
+        "vi": "Chiêm tinh",
+        "ja": "星占い"
+      }
+    },
+    {
+      "code": "it_137",
+      "langs": {
+        "en": "Motorcycles",
+        "vi": "Xe phân khối lớn",
+        "ja": "バイク"
+      }
+    },
+    {
+      "code": "it_138",
+      "langs": {
+        "en": "Equestrian",
+        "vi": "Cưỡi ngựa",
+        "ja": "乗馬"
+      }
+    },
+    {
+      "code": "it_139",
+      "langs": {
+        "en": "Bun cha",
+        "vi": "Bún chả",
+        "ja": "ブンチャー"
+      }
+    },
+    {
+      "code": "it_140",
+      "langs": {
+        "en": "Entrepreneurship",
+        "vi": "Khởi nghiệp",
+        "ja": "起業"
+      }
+    },
+    {
+      "code": "it_141",
+      "langs": {
+        "en": "Sake",
+        "vi": "Rượu Sake",
+        "ja": "日本酒"
+      }
+    },
+    {
+      "code": "it_142",
+      "langs": {
+        "en": "BTS",
+        "vi": "BTS",
+        "ja": "BTS"
+      }
+    },
+    {
+      "code": "it_143",
+      "langs": {
+        "en": "Cooking",
+        "vi": "Nấu ăn",
+        "ja": "料理"
+      }
+    },
+    {
+      "code": "it_144",
+      "langs": {
+        "en": "Environmental Protection",
+        "vi": "Bảo vệ môi trường",
+        "ja": "環境保護"
+      }
+    },
+    {
+      "code": "it_145",
+      "langs": {
+        "en": "Fencing",
+        "vi": "Đấu kiếm",
+        "ja": "フェンシング"
+      }
+    },
+    {
+      "code": "it_146",
+      "langs": {
+        "en": "Soccer",
+        "vi": "Bóng đá",
+        "ja": "サッカー"
+      }
+    },
+    {
+      "code": "it_147",
+      "langs": {
+        "en": "Saxophonist",
+        "vi": "Chơi saxophone",
+        "ja": "サックス"
+      }
+    },
+    {
+      "code": "it_148",
+      "langs": {
+        "en": "Sci-Fi",
+        "vi": "Sci-Fi",
+        "ja": "SF"
+      }
+    },
+    {
+      "code": "it_149",
+      "langs": {
+        "en": "Dancing",
+        "vi": "Nhảy",
+        "ja": "ダンス"
+      }
+    },
+    {
+      "code": "it_150",
+      "langs": {
+        "en": "Film Festival",
+        "vi": "Liên hoan phim",
+        "ja": "映画祭"
+      }
+    },
+    {
+      "code": "it_151",
+      "langs": {
+        "en": "Freeletics",
+        "vi": "Freeletics",
+        "ja": "Freeletics"
+      }
+    },
+    {
+      "code": "it_152",
+      "langs": {
+        "en": "Gardening",
+        "vi": "Làm vườn",
+        "ja": "ガーデニング"
+      }
+    },
+    {
+      "code": "it_153",
+      "langs": {
+        "en": "Amateur Cook",
+        "vi": "Đầu bếp nghiệp dư",
+        "ja": "素人シェフ"
+      }
+    },
+    {
+      "code": "it_154",
+      "langs": {
+        "en": "Exchange Program",
+        "vi": "Chương trình du học trao đổi",
+        "ja": "文化交流"
+      }
+    },
+    {
+      "code": "it_155",
+      "langs": {
+        "en": "Sauna",
+        "vi": "Đi Xông Hơi",
+        "ja": "サウナ"
+      }
+    },
+    {
+      "code": "it_156",
+      "langs": {
+        "en": "Art",
+        "vi": "Nghệ thuật",
+        "ja": "アート"
+      }
+    },
+    {
+      "code": "it_157",
+      "langs": {
+        "en": "Politics",
+        "vi": "Chính trị",
+        "ja": "政治"
+      }
+    },
+    {
+      "code": "it_158",
+      "langs": {
+        "en": "Flamenco",
+        "vi": "Flamenco",
+        "ja": "フラメンコ"
+      }
+    },
+    {
+      "code": "it_159",
+      "langs": {
+        "en": "Museum",
+        "vi": "Bảo tàng",
+        "ja": "美術館"
+      }
+    },
+    {
+      "code": "it_160",
+      "langs": {
+        "en": "Activism",
+        "vi": "Hoạt động xã hội",
+        "ja": "行動主義"
+      }
+    },
+    {
+      "code": "it_161",
+      "langs": {
+        "en": "Running Man",
+        "vi": "Running Man",
+        "ja": "ランニングマン"
+      }
+    },
+    {
+      "code": "it_162",
+      "langs": {
+        "en": "DAOs",
+        "vi": "Tổ chức tự trị phi tập trung",
+        "ja": "DAO"
+      }
+    },
+    {
+      "code": "it_163",
+      "langs": {
+        "en": "Real Estate",
+        "vi": "Bất động sản",
+        "ja": "不動産"
+      }
+    },
+    {
+      "code": "it_164",
+      "langs": {
+        "en": "Podcasts",
+        "vi": "Podcast",
+        "ja": "ポッドキャスト"
+      }
+    },
+    {
+      "code": "it_165",
+      "langs": {
+        "en": "Disability Rights",
+        "vi": "Quyền cho người khuyết tật",
+        "ja": "障がい者の権利"
+      }
+    },
+    {
+      "code": "it_166",
+      "langs": {
+        "en": "Rap Viet",
+        "vi": "Rap Việt",
+        "ja": "Rap Viet"
+      }
+    },
+    {
+      "code": "it_167",
+      "langs": {
+        "en": "Rave",
+        "vi": "Đi quẩy",
+        "ja": "レイヴ"
+      }
+    },
+    {
+      "code": "it_168",
+      "langs": {
+        "en": "Pimms",
+        "vi": "Pimms",
+        "ja": "ピムス"
+      }
+    },
+    {
+      "code": "it_169",
+      "langs": {
+        "en": "BBQ",
+        "vi": "BBQ",
+        "ja": "バーベキュー"
+      }
+    },
+    {
+      "code": "it_170",
+      "langs": {
+        "en": "Drive Thru Cinema",
+        "vi": "Xem phim ngoài trời",
+        "ja": "ドライブインシアター"
+      }
+    },
+    {
+      "code": "it_171",
+      "langs": {
+        "en": "Rock Climbing",
+        "vi": "Leo núi đá",
+        "ja": "ロッククライミング"
+      }
+    },
+    {
+      "code": "it_172",
+      "langs": {
+        "en": "Craft Beer",
+        "vi": "Bia thủ công",
+        "ja": "ビール"
+      }
+    },
+    {
+      "code": "it_173",
+      "langs": {
+        "en": "Iced Tea",
+        "vi": "Trà đá",
+        "ja": "アイスティー"
+      }
+    },
+    {
+      "code": "it_174",
+      "langs": {
+        "en": "Drummer",
+        "vi": "Chơi trống",
+        "ja": "ドラマー"
+      }
+    },
+    {
+      "code": "it_175",
+      "langs": {
+        "en": "Tea",
+        "vi": "Trà",
+        "ja": "お茶"
+      }
+    },
+    {
+      "code": "it_176",
+      "langs": {
+        "en": "Board Games",
+        "vi": "Board games",
+        "ja": "ボードゲーム"
+      }
+    },
+    {
+      "code": "it_177",
+      "langs": {
+        "en": "Roblox",
+        "vi": "Roblox",
+        "ja": "Roblox"
+      }
+    },
+    {
+      "code": "it_178",
+      "langs": {
+        "en": "Pubs",
+        "vi": "Quán rượu",
+        "ja": "パブ"
+      }
+    },
+    {
+      "code": "it_179",
+      "langs": {
+        "en": "Rock",
+        "vi": "Rock",
+        "ja": "ロック"
+      }
+    },
+    {
+      "code": "it_180",
+      "langs": {
+        "en": "Tango",
+        "vi": "Vũ điệu Tango",
+        "ja": "タンゴ"
+      }
+    },
+    {
+      "code": "it_181",
+      "langs": {
+        "en": "Drawing",
+        "vi": "Vẽ",
+        "ja": "イラスト"
+      }
+    },
+    {
+      "code": "it_182",
+      "langs": {
+        "en": "Trivia",
+        "vi": "Giải đố",
+        "ja": "トリビア"
+      }
+    },
+    {
+      "code": "it_183",
+      "langs": {
+        "en": "Pho",
+        "vi": "Phở",
+        "ja": "フォー"
+      }
+    },
+    {
+      "code": "it_184",
+      "langs": {
+        "en": "Volunteering",
+        "vi": "Đi tình nguyện",
+        "ja": "ボランティア"
+      }
+    },
+    {
+      "code": "it_185",
+      "langs": {
+        "en": "Environmentalism",
+        "vi": "Môi trường",
+        "ja": "環境保護"
+      }
+    },
+    {
+      "code": "it_186",
+      "langs": {
+        "en": "Rollerskating",
+        "vi": "Rollerskating",
+        "ja": "ローラースケート"
+      }
+    },
+    {
+      "code": "it_187",
+      "langs": {
+        "en": "Wine",
+        "vi": "Rượu",
+        "ja": "ワイン"
+      }
+    },
+    {
+      "code": "it_188",
+      "langs": {
+        "en": "Dungeons & Dragons",
+        "vi": "Dungeons & Dragons",
+        "ja": "ダンジョンズ＆ドラゴンズ"
+      }
+    },
+    {
+      "code": "it_189",
+      "langs": {
+        "en": "Hot Pot",
+        "vi": "Lẩu",
+        "ja": "火鍋"
+      }
+    },
+    {
+      "code": "it_190",
+      "langs": {
+        "en": "Vlogging",
+        "vi": "Làm video blog",
+        "ja": "Vlog"
+      }
+    },
+    {
+      "code": "it_191",
+      "langs": {
+        "en": "Electronic Music",
+        "vi": "Nhạc EDM",
+        "ja": "電子音楽"
+      }
+    },
+    {
+      "code": "it_192",
+      "langs": {
+        "en": "Ramen",
+        "vi": "Mì ramen",
+        "ja": "ラーメン"
+      }
+    },
+    {
+      "code": "it_193",
+      "langs": {
+        "en": "Weightlifting",
+        "vi": "Nâng tạ",
+        "ja": "重量挙げ"
+      }
+    },
+    {
+      "code": "it_194",
+      "langs": {
+        "en": "Live Music",
+        "vi": "Nhạc Live",
+        "ja": "音楽ライブ"
+      }
+    },
+    {
+      "code": "it_195",
+      "langs": {
+        "en": "Writing",
+        "vi": "Viết",
+        "ja": "楽器"
+      }
+    },
+    {
+      "code": "it_196",
+      "langs": {
+        "en": "Xbox",
+        "vi": "Xbox",
+        "ja": "Xbox"
+      }
+    },
+    {
+      "code": "it_197",
+      "langs": {
+        "en": "World Peace",
+        "vi": "Hòa bình cho thế giới",
+        "ja": "世界平和"
+      }
+    },
+    {
+      "code": "it_198",
+      "langs": {
+        "en": "Wrestling",
+        "vi": "Đấu vật",
+        "ja": "レスリング"
+      }
+    },
+    {
+      "code": "it_199",
+      "langs": {
+        "en": "Literature",
+        "vi": "Văn học",
+        "ja": "文学"
+      }
+    },
+    {
+      "code": "it_200",
+      "langs": {
+        "en": "Manga",
+        "vi": "Manga",
+        "ja": "マンガ"
+      }
+    },
+    {
+      "code": "it_201",
+      "langs": {
+        "en": "Pride",
+        "vi": "Tháng Tự hào",
+        "ja": "プライド"
+      }
+    },
+    {
+      "code": "it_202",
+      "langs": {
+        "en": "Marathon",
+        "vi": "Chạy marathon",
+        "ja": "マラソン"
+      }
+    },
+    {
+      "code": "it_203",
+      "langs": {
+        "en": "Makeup",
+        "vi": "Trang điểm",
+        "ja": "メイクアップ"
+      }
+    },
+    {
+      "code": "it_204",
+      "langs": {
+        "en": "Youth Empowerment",
+        "vi": "Trao quyền cho giới trẻ",
+        "ja": "若者のエンパワメント"
+      }
+    },
+    {
+      "code": "it_205",
+      "langs": {
+        "en": "YouTube",
+        "vi": "YouTube",
+        "ja": "YouTube"
+      }
+    },
+    {
+      "code": "it_206",
+      "langs": {
+        "en": "Martial Arts",
+        "vi": "Võ thuật",
+        "ja": "武道"
+      }
+    },
+    {
+      "code": "it_207",
+      "langs": {
+        "en": "Marvel",
+        "vi": "Marvel",
+        "ja": "マーベル"
+      }
+    },
+    {
+      "code": "it_208",
+      "langs": {
+        "en": "Vegan Cooking",
+        "vi": "Nấu đồ chay",
+        "ja": "ヴィーガン料理"
+      }
+    },
+    {
+      "code": "it_209",
+      "langs": {
+        "en": "Vermut",
+        "vi": "Vermouth",
+        "ja": "ベルモット"
+      }
+    },
+    {
+      "code": "it_210",
+      "langs": {
+        "en": "Korean Food",
+        "vi": "Đồ ăn Hàn Quốc",
+        "ja": "韓国料理"
+      }
+    },
+    {
+      "code": "it_211",
+      "langs": {
+        "en": "Twitter",
+        "vi": "Twitter",
+        "ja": "ツイッター"
+      }
+    },
+    {
+      "code": "it_212",
+      "langs": {
+        "en": "Volleyball",
+        "vi": "Bóng chuyền",
+        "ja": "バレーボール"
+      }
+    },
+    {
+      "code": "it_213",
+      "langs": {
+        "en": "Walking Tour",
+        "vi": "Tour đi bộ",
+        "ja": "ウォーキングツアー"
+      }
+    },
+    {
+      "code": "it_214",
+      "langs": {
+        "en": "Vinyasa",
+        "vi": "Vinyasa",
+        "ja": "ヴィンヤサ"
+      }
+    },
+    {
+      "code": "it_215",
+      "langs": {
+        "en": "Virtual Reality",
+        "vi": "Thực tế ảo",
+        "ja": "VR"
+      }
+    },
+    {
+      "code": "it_216",
+      "langs": {
+        "en": "League of Legends",
+        "vi": "Liên Minh Huyền Thoại",
+        "ja": "リーグ・オブ・レジェンド"
+      }
+    },
+    {
+      "code": "it_217",
+      "langs": {
+        "en": "NFTs",
+        "vi": "NFT",
+        "ja": "NFT"
+      }
+    },
+    {
+      "code": "it_218",
+      "langs": {
+        "en": "Bar Hopping",
+        "vi": "Khám phá quán bar",
+        "ja": "バー巡り"
+      }
+    },
+    {
+      "code": "it_219",
+      "langs": {
+        "en": "Nintendo",
+        "vi": "Nintendo",
+        "ja": "Nintendo"
+      }
+    },
+    {
+      "code": "it_220",
+      "langs": {
+        "en": "Baseball",
+        "vi": "Bóng chày",
+        "ja": "野球"
+      }
+    },
+    {
+      "code": "it_221",
+      "langs": {
+        "en": "Parties",
+        "vi": "Tiệc tùng",
+        "ja": "パーティー"
+      }
+    },
+    {
+      "code": "it_222",
+      "langs": {
+        "en": "Ballet",
+        "vi": "Múa ba lê",
+        "ja": "バレエ"
+      }
+    },
+    {
+      "code": "it_223",
+      "langs": {
+        "en": "Band",
+        "vi": "Ban nhạc",
+        "ja": "バンド"
+      }
+    },
+    {
+      "code": "it_224",
+      "langs": {
+        "en": "Online Games",
+        "vi": "Game online",
+        "ja": "オンラインゲーム"
+      }
+    },
+    {
+      "code": "it_225",
+      "langs": {
+        "en": "Battle Ground",
+        "vi": "Battle Ground",
+        "ja": "PUBG"
+      }
+    },
+    {
+      "code": "it_226",
+      "langs": {
+        "en": "Beach Tennis",
+        "vi": "Tennis bãi biển",
+        "ja": "ビーチテニス"
+      }
+    },
+    {
+      "code": "it_227",
+      "langs": {
+        "en": "Nightlife",
+        "vi": "Đi chơi đêm",
+        "ja": "ナイトライフ"
+      }
+    },
+    {
+      "code": "it_228",
+      "langs": {
+        "en": "Online Shopping",
+        "vi": "Mua sắm online",
+        "ja": "ネットショッピング"
+      }
+    },
+    {
+      "code": "it_229",
+      "langs": {
+        "en": "Sailing",
+        "vi": "Thuyền buồm",
+        "ja": "セーリング"
+      }
+    },
+    {
+      "code": "it_230",
+      "langs": {
+        "en": "Olympic Gymnastics",
+        "vi": "Thể dục dụng cụ Olympic",
+        "ja": "オリンピック体操競技"
+      }
+    },
+    {
+      "code": "it_231",
+      "langs": {
+        "en": "Bassist",
+        "vi": "Chơi đàn bass",
+        "ja": "ベース"
+      }
+    },
+    {
+      "code": "it_232",
+      "langs": {
+        "en": "Online Broker",
+        "vi": "Môi giới online",
+        "ja": "ネット証券会社"
+      }
+    },
+    {
+      "code": "it_233",
+      "langs": {
+        "en": "Military",
+        "vi": "Quân đội",
+        "ja": "軍隊"
+      }
+    },
+    {
+      "code": "it_234",
+      "langs": {
+        "en": "Memes",
+        "vi": "Meme",
+        "ja": "ミーム"
+      }
+    },
+    {
+      "code": "it_235",
+      "langs": {
+        "en": "Among Us",
+        "vi": "Among Us",
+        "ja": "Among Us"
+      }
+    },
+    {
+      "code": "it_236",
+      "langs": {
+        "en": "Motorbike Racing",
+        "vi": "Đua xe máy",
+        "ja": "バイクレース"
+      }
+    },
+    {
+      "code": "it_237",
+      "langs": {
+        "en": "Motorcycling",
+        "vi": "Lái xe máy",
+        "ja": "バイク"
+      }
+    },
+    {
+      "code": "it_238",
+      "langs": {
+        "en": "Metaverse",
+        "vi": "Metaverse",
+        "ja": "メタバース"
+      }
+    },
+    {
+      "code": "it_239",
+      "langs": {
+        "en": "Mindfulness",
+        "vi": "Chánh niệm",
+        "ja": "マインドフルネス"
+      }
+    },
+    {
+      "code": "it_240",
+      "langs": {
+        "en": "Acapella",
+        "vi": "Acapella",
+        "ja": "アカペラ"
+      }
+    },
+    {
+      "code": "it_241",
+      "langs": {
+        "en": "Musical Instrument",
+        "vi": "Nhạc cụ",
+        "ja": "楽器"
+      }
+    },
+    {
+      "code": "it_242",
+      "langs": {
+        "en": "Art Galleries",
+        "vi": "Triển lãm nghệ thuật",
+        "ja": "美術館"
+      }
+    },
+    {
+      "code": "it_243",
+      "langs": {
+        "en": "Musical Writing",
+        "vi": "Viết nhạc",
+        "ja": "音楽制作"
+      }
+    },
+    {
+      "code": "it_244",
+      "langs": {
+        "en": "Hiking",
+        "vi": "Đi bộ đường trường",
+        "ja": "ハイキング"
+      }
+    },
+    {
+      "code": "it_245",
+      "langs": {
+        "en": "Artistic Gymnastics",
+        "vi": "Thể dục nghệ thuật",
+        "ja": "体操競技"
+      }
+    },
+    {
+      "code": "it_246",
+      "langs": {
+        "en": "Mountains",
+        "vi": "Những ngọn núi",
+        "ja": "山"
+      }
+    },
+    {
+      "code": "it_247",
+      "langs": {
+        "en": "Archery",
+        "vi": "Bắn cung",
+        "ja": "アーチェリー"
+      }
+    },
+    {
+      "code": "it_248",
+      "langs": {
+        "en": "Atari",
+        "vi": "Atari",
+        "ja": "アタリ"
+      }
+    },
+    {
+      "code": "it_249",
+      "langs": {
+        "en": "Backpacking",
+        "vi": "Du lịch bụi",
+        "ja": "バックパック旅行"
+      }
+    },
+    {
+      "code": "it_250",
+      "langs": {
+        "en": "Fishing",
+        "vi": "Câu cá",
+        "ja": "釣り"
+      }
+    },
+    {
+      "code": "it_251",
+      "langs": {
+        "en": "Clubbing",
+        "vi": "Đi quẩy",
+        "ja": "クラブ"
+      }
+    },
+    {
+      "code": "it_252",
+      "langs": {
+        "en": "Street Food",
+        "vi": "Đồ ăn đường phố",
+        "ja": "屋台料理"
+      }
+    },
+    {
+      "code": "it_253",
+      "langs": {
+        "en": "Crossfit",
+        "vi": "Crossfit",
+        "ja": "クロスフィット"
+      }
+    },
+    {
+      "code": "it_254",
+      "langs": {
+        "en": "Concerts",
+        "vi": "Hòa nhạc",
+        "ja": "コンサート"
+      }
+    },
+    {
+      "code": "it_255",
+      "langs": {
+        "en": "Climbing",
+        "vi": "Leo núi",
+        "ja": "山のぼり"
+      }
+    },
+    {
+      "code": "it_256",
+      "langs": {
+        "en": "Baking",
+        "vi": "Nướng bánh",
+        "ja": "お菓子づくり"
+      }
+    },
+    {
+      "code": "it_257",
+      "langs": {
+        "en": "Camping",
+        "vi": "Cắm trại",
+        "ja": "キャンプ"
+      }
+    },
+    {
+      "code": "it_258",
+      "langs": {
+        "en": "Blogging",
+        "vi": "Viết blog",
+        "ja": "ブログ"
+      }
+    },
+    {
+      "code": "it_259",
+      "langs": {
+        "en": "Collecting",
+        "vi": "Sưu tầm",
+        "ja": "コレクション"
+      }
+    },
+    {
+      "code": "it_260",
+      "langs": {
+        "en": "Cars",
+        "vi": "Xe hơi",
+        "ja": "車"
+      }
+    },
+    {
+      "code": "it_261",
+      "langs": {
+        "en": "Start ups",
+        "vi": "Khởi nghiệp",
+        "ja": "スタートアップ"
+      }
+    },
+    {
+      "code": "it_262",
+      "langs": {
+        "en": "Boba tea",
+        "vi": "Trà sữa",
+        "ja": "タピオカティー"
+      }
+    },
+    {
+      "code": "it_263",
+      "langs": {
+        "en": "High School Sports",
+        "vi": "Giải bóng chày trường cấp ba (Đài Loan)",
+        "ja": "高校バスケ"
+      }
+    },
+    {
+      "code": "it_264",
+      "langs": {
+        "en": "Badminton",
+        "vi": "Cầu lông",
+        "ja": "バドミントン"
+      }
+    },
+    {
+      "code": "it_265",
+      "langs": {
+        "en": "Active Lifestyle",
+        "vi": "Phong cách sống năng động",
+        "ja": "アクティブ"
+      }
+    },
+    {
+      "code": "it_266",
+      "langs": {
+        "en": "Fashion",
+        "vi": "Thời trang",
+        "ja": "ファッション"
+      }
+    },
+    {
+      "code": "it_267",
+      "langs": {
+        "en": "Anime",
+        "vi": "Anime",
+        "ja": "アニメ"
+      }
+    },
+    {
+      "code": "it_268",
+      "langs": {
+        "en": "NBA",
+        "vi": "NBA",
+        "ja": "NBA"
+      }
+    },
+    {
+      "code": "it_269",
+      "langs": {
+        "en": "MLB",
+        "vi": "MLB (Liên đoàn bóng chày Mỹ)",
+        "ja": "MLB"
+      }
+    },
+    {
+      "code": "it_270",
+      "langs": {
+        "en": "Funk music",
+        "vi": "Nhạc Funk",
+        "ja": "ファンク"
+      }
+    },
+    {
+      "code": "it_271",
+      "langs": {
+        "en": "Caipirinha",
+        "vi": "Cocktail Caipirinha",
+        "ja": "カイピリーニャ"
+      }
+    },
+    {
+      "code": "it_272",
+      "langs": {
+        "en": "Indoor Activities",
+        "vi": "Các hoạt động trong nhà",
+        "ja": "インドア派"
+      }
+    },
+    {
+      "code": "it_273",
+      "langs": {
+        "en": "Tempeh",
+        "vi": "Tempeh",
+        "ja": "テンペ"
+      }
+    },
+    {
+      "code": "it_274",
+      "langs": {
+        "en": "DIY",
+        "vi": "Tự làm đồ DIY",
+        "ja": "DIY"
+      }
+    },
+    {
+      "code": "it_275",
+      "langs": {
+        "en": "Town Festivities",
+        "vi": "Các lễ hội trong thành phố",
+        "ja": "地元のお祭り"
+      }
+    },
+    {
+      "code": "it_276",
+      "langs": {
+        "en": "Cycling",
+        "vi": "Đạp xe",
+        "ja": "サイクリング"
+      }
+    },
+    {
+      "code": "it_277",
+      "langs": {
+        "en": "Outdoors",
+        "vi": "Hoạt động ngoài trời",
+        "ja": "アウトドア派"
+      }
+    },
+    {
+      "code": "it_278",
+      "langs": {
+        "en": "TikTok",
+        "vi": "TikTok",
+        "ja": "TikTok"
+      }
+    },
+    {
+      "code": "it_279",
+      "langs": {
+        "en": "Picnicking",
+        "vi": "Đi picnic",
+        "ja": "ピクニック"
+      }
+    },
+    {
+      "code": "it_280",
+      "langs": {
+        "en": "Twitch",
+        "vi": "Twitch",
+        "ja": "ツイッチ"
+      }
+    },
+    {
+      "code": "it_281",
+      "langs": {
+        "en": "Comedy",
+        "vi": "Hài kịch",
+        "ja": "お笑い"
+      }
+    },
+    {
+      "code": "it_282",
+      "langs": {
+        "en": "Trap Music",
+        "vi": "Nhạc Trap",
+        "ja": "トラップミュージック"
+      }
+    },
+    {
+      "code": "it_283",
+      "langs": {
+        "en": "Music",
+        "vi": "Âm nhạc",
+        "ja": "音楽"
+      }
+    },
+    {
+      "code": "it_284",
+      "langs": {
+        "en": "Triathlon",
+        "vi": "Ba môn phối hợp",
+        "ja": "トライアスロン"
+      }
+    },
+    {
+      "code": "it_285",
+      "langs": {
+        "en": "Netflix",
+        "vi": "Netflix",
+        "ja": "Netflix"
+      }
+    },
+    {
+      "code": "it_286",
+      "langs": {
+        "en": "Disney",
+        "vi": "Disney",
+        "ja": "ディズニー"
+      }
+    },
+    {
+      "code": "it_287",
+      "langs": {
+        "en": "Rugby",
+        "vi": "Bóng bầu dục",
+        "ja": "ラグビー"
+      }
+    },
+    {
+      "code": "it_288",
+      "langs": {
+        "en": "Açaí",
+        "vi": "Açaí",
+        "ja": "アサイー"
+      }
+    },
+    {
+      "code": "it_289",
+      "langs": {
+        "en": "Samba",
+        "vi": "Vũ điệu Samba",
+        "ja": "サンバ"
+      }
+    },
+    {
+      "code": "it_290",
+      "langs": {
+        "en": "Tarot",
+        "vi": "Bói bài Tarot",
+        "ja": "タロット"
+      }
+    },
+    {
+      "code": "it_291",
+      "langs": {
+        "en": "Stock Exchange",
+        "vi": "Chứng khoán",
+        "ja": "証券取引所"
+      }
+    },
+    {
+      "code": "it_292",
+      "langs": {
+        "en": "Stocks",
+        "vi": "Cổ phiếu",
+        "ja": "株式"
+      }
+    },
+    {
+      "code": "it_293",
+      "langs": {
+        "en": "Swimming",
+        "vi": "Bơi lội",
+        "ja": "水泳"
+      }
+    },
+    {
+      "code": "it_294",
+      "langs": {
+        "en": "Table Tennis",
+        "vi": "Bóng bàn",
+        "ja": "卓球"
+      }
+    },
+    {
+      "code": "it_295",
+      "langs": {
+        "en": "Killing time",
+        "vi": "Giết thời gian",
+        "ja": "暇つぶし"
+      }
+    },
+    {
+      "code": "it_296",
+      "langs": {
+        "en": "Working out",
+        "vi": "Luyện tập thể thao",
+        "ja": "ジム"
+      }
+    },
+    {
+      "code": "it_297",
+      "langs": {
+        "en": "Yoga",
+        "vi": "Tập yoga",
+        "ja": "ヨガ"
+      }
+    },
+    {
+      "code": "it_298",
+      "langs": {
+        "en": "Horror Movies",
+        "vi": "Phim kinh dị",
+        "ja": "ホラームービー"
+      }
+    },
+    {
+      "code": "it_299",
+      "langs": {
+        "en": "Boxing",
+        "vi": "Quyền anh",
+        "ja": "ボクシング"
+      }
+    },
+    {
+      "code": "it_300",
+      "langs": {
+        "en": "Bar Chilling",
+        "vi": "Đi chill tại bar",
+        "ja": "バーでまったり"
+      }
+    }
+  ],
+  "count": 300
+}

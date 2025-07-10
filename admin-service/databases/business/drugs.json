@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "code": "item_1",
+      "langs": {
+        "en": "Yes",
+        "vi": "Đúng",
+        "ja": "はい"
+      }
+    },
+    {
+      "code": "item_2",
+      "langs": {
+        "en": "No",
+        "vi": "Không",
+        "ja": "いいえ"
+      }
+    },
+    {
+      "code": "item_3",
+      "langs": {
+        "en": "Sometime",
+        "vi": "Thỉnh thoảng",
+        "ja": "いつか"
+      }
+    }
+  ]
+}

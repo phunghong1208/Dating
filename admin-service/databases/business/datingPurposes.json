@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "code": "item_1",
+      "langs": {
+        "en": "Long-term partner",
+        "vi": "Người yêu",
+        "ja": "恋人がほしい"
+      }
+    },
+    {
+      "code": "item_2",
+      "langs": {
+        "en": "Long-term, open to short",
+        "vi": "Bạn hẹn hò lâu dài",
+        "ja": "いい人がいれば付き合いたい"
+      }
+    },
+    {
+      "code": "item_3",
+      "langs": {
+        "en": "Short-term, open to long",
+        "vi": "Bất kì điều gì có thể",
+        "ja": "友だちがほしい"
+      }
+    },
+    {
+      "code": "item_4",
+      "langs": {
+        "en": "Short-term fun",
+        "vi": "Quan hệ không ràng buộc",
+        "ja": "暇つぶし"
+      }
+    },
+    {
+      "code": "item_5",
+      "langs": {
+        "en": "New friends",
+        "vi": "Những người bạn mới",
+        "ja": "チャット相手"
+      }
+    },
+    {
+      "code": "item_6",
+      "langs": {
+        "en": "Still figuring it out",
+        "vi": "Mình cũng chưa rõ lắm",
+        "ja": "まだわからない"
+      }
+    }
+  ],
+  "count": 6
+}

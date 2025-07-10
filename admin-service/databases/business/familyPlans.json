@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "code": "item_1",
+      "langs": {
+        "en": "I want children",
+        "vi": "Mình muốn có con",
+        "ja": "欲しい"
+      }
+    },
+    {
+      "code": "item_2",
+      "langs": {
+        "en": "I don't want children",
+        "vi": "Mình không muốn có con",
+        "ja": "欲しくない"
+      }
+    },
+    {
+      "code": "item_3",
+      "langs": {
+        "en": "I have children and want more",
+        "vi": "Mình có con rồi và muốn có thêm",
+        "ja": "子どもはいるけど、もっと欲しい"
+      }
+    },
+    {
+      "code": "item_4",
+      "langs": {
+        "en": "I have children and don't want more",
+        "vi": "Mình có con rồi và không muốn có thêm",
+        "ja": "子どもはいるけど、もう欲しくない"
+      }
+    },
+    {
+      "code": "item_5",
+      "langs": {
+        "en": "Not sure yet",
+        "vi": "Vẫn chưa chắc chắn",
+        "ja": "まだわからない"
+      }
+    }
+  ],
+  "count": 5
+}

@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "code": "item_1",
+      "langs": {
+        "en": "Thoughtful gestures",
+        "vi": "Những hành động tinh tế",
+        "ja": "思いやりのある振る舞い"
+      }
+    },
+    {
+      "code": "item_2",
+      "langs": {
+        "en": "Presents",
+        "vi": "Những món quà",
+        "ja": "プレゼント"
+      }
+    },
+    {
+      "code": "item_3",
+      "langs": {
+        "en": "Touch",
+        "vi": "Những cử chỉ âu yếm",
+        "ja": "スキンシップ"
+      }
+    },
+    {
+      "code": "item_4",
+      "langs": {
+        "en": "Compliments",
+        "vi": "Những lời khen",
+        "ja": "褒め言葉"
+      }
+    },
+    {
+      "code": "item_5",
+      "langs": {
+        "en": "Time together",
+        "vi": "Thời gian bên nhau",
+        "ja": "一緒にいる時間"
+      }
+    }
+  ],
+  "count": 5
+}

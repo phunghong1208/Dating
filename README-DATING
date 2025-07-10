@@ -1,0 +1,270 @@
+# HeartLink Microservices Architecture
+
+Dự án HeartLink được tách thành 3 microservices riêng biệt, sử dụng chung một MongoDB database `bachasoft`.
+
+## 🏗️ Kiến trúc Microservices
+
+### **1. App Service** (Port 3001)
+- **Chức năng**: Quản lý user, authentication, matching, cards, swipe actions
+- **Database**: `bachasoft` (chung)
+- **Collections**: `users`, `profiles`, `cards`, `matches`, `images`, `static_data`
+- **Endpoints chính**:
+  - Authentication: `/api/v1/login`, `/api/v1/register`, `/api/v1/refreshToken`
+  - User Management: `/api/v1/profile`, `/api/v1/setting`
+  - Cards/Matching: `/api/v1/cards`, `/api/v1/like`, `/api/v1/nope`
+  - Image Management: `/api/v1/image/profile`
+  - Static Data: `/api/v1/statics/*`
+
+### **2. Chat Service** (Port 3002)
+- **Chức năng**: Quản lý chat, messages, friends, channels
+- **Database**: `bachasoft` (chung)
+- **Collections**: `friends`, `channels`, `messages`, `conversations`
+- **Endpoints chính**:
+  - Friends: `/api/v1/friends`, `/api/v1/friends/new`
+  - Channels: `/api/v1/channels`, `/api/v1/getChannelId`
+  - Messages: `/api/v1/channels/:chatId/messages`, `/api/v1/messages/add`
+
+### **3. Admin Service** (Port 3003)
+- **Chức năng**: Quản lý admin, reports, analytics, customer management
+- **Database**: `bachasoft` (chung)
+- **Collections**: `admins`, `customers`, `reports`, `activities`, `payments`, `static_data`
+- **Endpoints chính**:
+  - Admin Auth: `/api/login`, `/api/logout`
+  - User Management: `/api/users`, `/api/users-disabled`
+  - Customer Management: `/api/customers`, `/api/card-customer-user`
+  - Reports: `/api/reports`, `/api/list-report`
+  - CRUD Operations: `/api/areas`, `/api/packages`, `/api/jobs`, etc.
+
+## 🚀 Cách chạy
+
+### **Option 1: Docker Compose (Khuyến nghị)**
+
+```bash
+# Chạy tất cả services
+docker-compose up
+
+# Chạy ở background
+docker-compose up -d
+
+# Dừng services
+docker-compose down
+```
+
+### **Option 2: Chạy từng service riêng lẻ**
+
+```bash
+# 1. Khởi động MongoDB
+docker run -d --name mongodb -p 27017:27017 \
+  -e MONGO_INITDB_ROOT_USERNAME=bachasoft \
+  -e MONGO_INITDB_ROOT_PASSWORD=123654 \
+  -e MONGO_INITDB_DATABASE=bachasoft \
+  mongo:5.0
+
+# 2. Tạo file .env cho App Service
+cd app-service
+cat > .env << EOF
+NODE_ENV=dev
+PORT=3001
+DB_HOST=127.0.0.1
+DB_PORT=27017
+DB_NAME=bachasoft
+DB_USER=bachasoft
+DB_PASS=123654
+EOF
+
+npm install
+npm start
+
+# 3. Chạy Chat Service (terminal mới)
+cd ../chat-service
+cat > .env << EOF
+NODE_ENV=dev
+PORT=3002
+DB_HOST=127.0.0.1
+DB_PORT=27017
+DB_NAME=bachasoft
+DB_USER=bachasoft
+DB_PASS=123654
+EOF
+
+npm install
+npm start
+
+# 4. Chạy Admin Service (terminal mới)
+cd ../admin-service
+cat > .env << EOF
+NODE_ENV=dev
+PORT=3003
+DB_HOST=127.0.0.1
+DB_PORT=27017
+DB_NAME=bachasoft
+DB_USER=bachasoft
+DB_PASS=123654
+EOF
+
+npm install
+npm start
+```
+
+## 📊 Kiểm tra services
+
+### **Health Checks**
+```bash
+# App Service
+curl http://localhost:3001/health
+
+# Chat Service
+curl http://localhost:3002/health
+
+# Admin Service
+curl http://localhost:3003/health
+```
+
+### **Test Endpoints**
+```bash
+# App Service - Get cards
+curl http://localhost:3001/api/v1/cards
+
+# Chat Service - Get friends
+curl http://localhost:3002/api/v1/friends
+
+# Admin Service - Get users
+curl http://localhost:3003/api/users
+```
+
+## 🗄️ Database Structure
+
+### **MongoDB Database: `bachasoft`**
+
+#### **Collections chung:**
+- `users` - Thông tin user (App Service)
+- `profiles` - Profile chi tiết (App Service)
+- `cards` - Cards để swipe (App Service)
+- `matches` - Kết quả matching (App Service)
+- `images` - Ảnh profile (App Service)
+- `static_data` - Dữ liệu tĩnh (App Service)
+- `friends` - Danh sách friends (Chat Service)
+- `channels` - Chat channels (Chat Service)
+- `messages` - Messages trong channels (Chat Service)
+- `conversations` - Lịch sử chat (Chat Service)
+- `admins` - Admin users (Admin Service)
+- `customers` - Customer data (Admin Service)
+- `reports` - Báo cáo vi phạm (Admin Service)
+- `activities` - User activities (Admin Service)
+- `payments` - Payment records (Admin Service)
+
+## 🔧 Environment Variables
+
+### **Chung cho tất cả services:**
+```env
+NODE_ENV=dev
+PORT=<port>
+DB_HOST=127.0.0.1
+DB_PORT=27017
+DB_NAME=bachasoft
+DB_USER=bachasoft
+DB_PASS=123654
+```
+
+### **App Service:**
+```env
+PORT=3001
+```
+
+### **Chat Service:**
+```env
+PORT=3002
+```
+
+### **Admin Service:**
+```env
+PORT=3003
+```
+
+## 📁 Cấu trúc thư mục
+
+```
+dating/
+├── config/
+│   └── database.js          # Config database chung
+├── app-service/
+│   ├── app.js
+│   ├── package.json
+│   ├── .env (tạo thủ công)
+│   ├── routes/
+│   │   ├── app.js
+│   │   └── chat.js
+│   └── Dockerfile
+├── chat-service/
+│   ├── app.js
+│   ├── package.json
+│   ├── .env (tạo thủ công)
+│   ├── routes/
+│   │   └── chat.js
+│   └── Dockerfile
+├── admin-service/
+│   ├── app.js
+│   ├── package.json
+│   ├── .env (tạo thủ công)
+│   ├── routes/
+│   │   └── admin.js
+│   └── Dockerfile
+├── docker-compose.yml
+└── README-microservices.md
+```
+
+## 🔄 Service Communication
+
+### **Inter-Service Communication**
+- **App Service** ↔ **Chat Service**: Gọi API để lấy thông tin friends/matches
+- **App Service** ↔ **Admin Service**: Gọi API để báo cáo vi phạm
+- **Chat Service** ↔ **App Service**: Gọi API để lấy thông tin user
+
+### **Database Sharing**
+- Cả 3 services chia sẻ chung database `bachasoft`
+- Mỗi service quản lý collections riêng của mình
+- Có thể truy cập cross-service data khi cần
+
+### **API Gateway (Tương lai)**
+Có thể thêm API Gateway để:
+- Rate limiting
+- Authentication/Authorization
+- Request routing
+- Load balancing
+
+## 🚀 Deployment
+
+### **Development**
+```bash
+docker-compose up --build
+```
+
+### **Production**
+```bash
+# Build images
+docker-compose build
+
+# Run with production config
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+```
+
+## 📝 Notes
+
+- ✅ Tất cả services sử dụng chung MongoDB database `bachasoft`
+- ✅ Config database chung ở `config/database.js`
+- ✅ Environment variables đơn giản, chỉ cần thiết
+- ✅ Cấu trúc thư mục đơn giản (services ở root level)
+- ✅ Tất cả services hiện tại đang sử dụng mock controllers
+- ✅ Cần implement thực tế các controllers và models
+- ✅ Có thể thêm authentication middleware
+- ✅ Có thể thêm logging và monitoring
+- ✅ Có thể thêm caching (Redis) cho performance 
+
+
+
+cd app-service && npm install
+cd chat-service && npm install  
+cd admin-service && npm install
+
+   lsof -i :3001
+   kill -9 12345

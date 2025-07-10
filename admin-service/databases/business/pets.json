@@ -1,0 +1,125 @@
+{
+  "data": [
+    {
+      "code": "item_1",
+      "langs": {
+        "en": "Dog",
+        "vi": "Chó",
+        "ja": "犬"
+      }
+    },
+    {
+      "code": "item_2",
+      "langs": {
+        "en": "Cat",
+        "vi": "Mèo",
+        "ja": "猫"
+      }
+    },
+    {
+      "code": "item_3",
+      "langs": {
+        "en": "Reptile",
+        "vi": "Bò sát",
+        "ja": "爬虫類"
+      }
+    },
+    {
+      "code": "item_4",
+      "langs": {
+        "en": "Amphibian",
+        "vi": "Động vật lưỡng cư",
+        "ja": "両生類"
+      }
+    },
+    {
+      "code": "item_5",
+      "langs": {
+        "en": "Fish",
+        "vi": "Cá",
+        "ja": "魚"
+      }
+    },
+    {
+      "code": "item_6",
+      "langs": {
+        "en": "Pet-free",
+        "vi": "Không nuôi thú cưng",
+        "ja": "何も飼っていない"
+      }
+    },
+    {
+      "code": "item_7",
+      "langs": {
+        "en": "All the pets",
+        "vi": "Tất cả các loại thú cưng",
+        "ja": "いろいろ飼っている"
+      }
+    },
+    {
+      "code": "item_8",
+      "langs": {
+        "en": "Bird",
+        "vi": "Loài chim",
+        "ja": "鳥"
+      }
+    },
+    {
+      "code": "item_9",
+      "langs": {
+        "en": "Don't have but love",
+        "vi": "Yêu thích nhưng không nuôi",
+        "ja": "飼っていないけど好き"
+      }
+    },
+    {
+      "code": "item_10",
+      "langs": {
+        "en": "Other",
+        "vi": "Khác",
+        "ja": "他の生き物"
+      }
+    },
+    {
+      "code": "item_11",
+      "langs": {
+        "en": "Turtle",
+        "vi": "Rùa",
+        "ja": "カメ"
+      }
+    },
+    {
+      "code": "item_12",
+      "langs": {
+        "en": "Hamster",
+        "vi": "Hamster",
+        "ja": "ハムスター"
+      }
+    },
+    {
+      "code": "item_13",
+      "langs": {
+        "en": "Rabbit",
+        "vi": "Thỏ",
+        "ja": "ウサギ"
+      }
+    },
+    {
+      "code": "item_14",
+      "langs": {
+        "en": "Want a pet",
+        "vi": "Muốn nuôi thú cưng",
+        "ja": "ペットを飼いたい"
+      }
+    },
+    {
+      "code": "item_15",
+      "langs": {
+        "en": "Allergic to pets",
+        "vi": "Dị ứng với động vật",
+        "ja": "動物アレルギー"
+      }
+    }
+  ],
+  "count": 15
+}

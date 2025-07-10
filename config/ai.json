@@ -1,0 +1,11 @@
+{
+  "AI_API_KEY": "01H1QSBR2K5HW850G2KEHZ0RCM",
+  "AI_HOST": "http://118.70.126.72",
+  "AI_PORT": "7000",
+  "RECOMMEND_HOST": "http://ai.heartlinkdating.com",
+  "RECOMMEND_PORT": "",
+  "API_LIST_RECOMMEND": "clients/recommends",
+  "API_LIST_EXPLORE": "clients/explore",
+  "API_LIST_VERIFIED": "clients/verified",
+  "API_VERIFY_FACEID": "clients/face-verify"
+}

@@ -1,0 +1,101 @@
+{
+  "data": [
+    {
+      "code": "capricorn",
+      "langs": {
+        "en": "Capricorn",
+        "vi": "Ma Kết",
+        "ja": "やぎ座"
+      }
+    },
+    {
+      "code": "aquarius",
+      "langs": {
+        "en": "Aquarius",
+        "vi": "Bảo Bình",
+        "ja": "みずがめ座"
+      }
+    },
+    {
+      "code": "pisces",
+      "langs": {
+        "en": "Pisces",
+        "vi": "Song Ngư",
+        "ja": "うお座"
+      }
+    },
+    {
+      "code": "aries",
+      "langs": {
+        "en": "Aries",
+        "vi": "Bạch Dương",
+        "ja": "おひつじ座"
+      }
+    },
+    {
+      "code": "taurus",
+      "langs": {
+        "en": "Taurus",
+        "vi": "Kim Ngưu",
+        "ja": "おうし座"
+      }
+    },
+    {
+      "code": "gemini",
+      "langs": {
+        "en": "Gemini",
+        "vi": "Song Tử",
+        "ja": "ふたご座"
+      }
+    },
+    {
+      "code": "cancer",
+      "langs": {
+        "en": "Cancer",
+        "vi": "Cự Giải",
+        "ja": "かに座"
+      }
+    },
+    {
+      "code": "leo",
+      "langs": {
+        "en": "Leo",
+        "vi": "Sư Tử",
+        "ja": "しし座"
+      }
+    },
+    {
+      "code": "virgo",
+      "langs": {
+        "en": "Virgo",
+        "vi": "Xử Nữ",
+        "ja": "おとめ座"
+      }
+    },
+    {
+      "code": "libra",
+      "langs": {
+        "en": "Libra",
+        "vi": "Thiên Bình",
+        "ja": "てんびん座"
+      }
+    },
+    {
+      "code": "scorpio",
+      "langs": {
+        "en": "Scorpio",
+        "vi": "Bọ Cạp",
+        "ja": "さそり座"
+      }
+    },
+    {
+      "code": "sagittarius",
+      "langs": {
+        "en": "Sagittarius",
+        "vi": "Nhân Mã",
+        "ja": "いて座"
+      }
+    }
+  ],
+  "count": 12
+}

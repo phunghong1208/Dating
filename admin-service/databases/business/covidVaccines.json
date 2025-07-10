@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "code": "vaccinated",
+      "langs": {
+        "en": "Vaccinated",
+        "vi": "Đã được tiêm Vắc xin",
+        "ja": "ワクチン接種済み"
+      }
+    },
+    {
+      "code": "unvaccinated",
+      "langs": {
+        "en": "Unvaccinated",
+        "vi": "Chưa tiêm vắc xin",
+        "ja": "未接種"
+      }
+    },
+    {
+      "code": "preferNotToSay",
+      "langs": {
+        "en": "Prefer not to say",
+        "vi": "Không muốn nói",
+        "ja": "回答を控える"
+      }
+    }
+  ],
+  "count": 3
+}
