@@ -3,7 +3,7 @@
  * @description Schema of Language.
  */
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Language extends BaseModel {
   constructor() {

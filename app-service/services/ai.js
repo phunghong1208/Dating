@@ -8,7 +8,7 @@ const Customer = require('../models/Customer');
 const Images = require('../models/Image');
 const PromptAnswer = require('../models/PromptAnswer');
 
-const Utils = require('../../utils');
+const Utils = require('../utils');
 const {
   AI_HOST,
   AI_PORT,
@@ -18,7 +18,7 @@ const {
   API_LIST_RECOMMEND,
   API_LIST_EXPLORE,
   API_LIST_VERIFIED,
-} = require('../../config/ai.json');
+} = require('../config/ai.json');
 const { forEach } = require('lodash');
 
 const aiHost = AI_PORT ? `${AI_HOST}:${AI_PORT}` : AI_HOST;

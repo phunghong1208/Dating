@@ -1,7 +1,7 @@
 'use strict';
 
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Interest extends BaseModel {
   constructor() {

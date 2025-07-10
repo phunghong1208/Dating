@@ -1,9 +1,9 @@
 'use strict';
 
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
-const Utils = require('../../utils');
-const DBUtils = require('../../utils/Database');
+const Entities = require('../databases/entities');
+const Utils = require('../utils');
+const DBUtils = require('../utils/Database');
 
 class ImageUser extends BaseModel {
   constructor() {

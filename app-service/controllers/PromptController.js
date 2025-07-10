@@ -1,9 +1,9 @@
 const to = require('await-to-js').default;
-const HttpUtil = require('../../utils/http');
+const HttpUtil = require('../utils/http');
 const PromptAnswer = require('../models/PromptAnswer');
 const Customer = require('../models/Customer');
 const HistoryProfile = require('../models/HistoryProfile');
-const Utils = require('../../utils');
+const Utils = require('../utils');
 const BaseController = require('../../Base');
 
 class PromptController extends BaseController {

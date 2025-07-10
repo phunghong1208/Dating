@@ -3,7 +3,7 @@
  * @description Schema of Pet.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Pet extends BaseModel {
   constructor() {

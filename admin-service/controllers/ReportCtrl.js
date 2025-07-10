@@ -5,8 +5,8 @@ const BaseController = require('../controllers/BaseController');
 const Model = require('../models/Report');
 const Customer = require('../models/Customer');
 const ReportAccount = require('../models/ReportAccount');
-const HttpUtil = require('../../utils/http');
-const Utils = require('../../utils');
+const HttpUtil = require('../utils/http');
+const Utils = require('../utils');
 
 class Controller extends BaseController {
   constructor() {

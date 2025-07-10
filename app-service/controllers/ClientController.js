@@ -1,10 +1,10 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const AuthUtil = require('../../utils/auth');
-const HttpUtil = require('../../utils/http');
-const DBUtils = require('../../utils/Database');
-const Utils = require('../../utils');
+const AuthUtil = require('../utils/auth');
+const HttpUtil = require('../utils/http');
+const DBUtils = require('../utils/Database');
+const Utils = require('../utils');
 const BaseController = require('../../Base');
 const Customer = require('../models/Customer');
 const Image = require('../models/Image');
@@ -15,8 +15,8 @@ const PromptAnswer = require('../models/PromptAnswer');
 
 const { verifyUID } = require('../services/firebase');
 const { verifyFaceID } = require('../services/ai');
-const { isFreeRuntime, timeDurationBoost, numLimitedLikes } = require('../../config');
-const AvatarConfigs = require('../../config').avatars;
+const { isFreeRuntime, timeDurationBoost, numLimitedLikes } = require('../config');
+const AvatarConfigs = require('../config').avatars;
 
 class AuthController extends BaseController {
   constructor() {

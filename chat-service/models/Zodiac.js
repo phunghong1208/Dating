@@ -3,7 +3,7 @@
  * @description Schema of Zodiac.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Zodiac extends BaseModel {
   constructor() {

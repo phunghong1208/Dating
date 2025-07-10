@@ -3,9 +3,9 @@
  * @description Schema of Customer.
  */
 const BaseModel = require('../models/Base');
-const Utils = require('../../utils');
-const DBUtils = require('../../utils/Database');
-const Entities = require('../../shared-entities');
+const Utils = require('../utils');
+const DBUtils = require('../utils/Database');
+const Entities = require('../databases/entities');
 
 class Customer extends BaseModel {
   constructor() {

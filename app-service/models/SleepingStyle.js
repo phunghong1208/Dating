@@ -3,7 +3,7 @@
  * @description Schema of SleepingStyle.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class SleepingStyle extends BaseModel {
   constructor() {

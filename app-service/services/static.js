@@ -31,8 +31,8 @@ const Drug = require('../models/Drug');
 
 const Topic = require('../models/Topic');
 const Package = require('../models/Package');
-const configTopic = require('../../config/topic');
-const { whoYouSeeTypes, whoSeeYouTypes } = require('../../config/common');
+const configTopic = require('../config/topic');
+const { whoYouSeeTypes, whoSeeYouTypes } = require('../config/common');
 const Prompt = require('../models/Prompt');
 const PromptCategory = require('../models/PromptCategory');
 const ReasonAccount = require('../models/ReasonAccount');

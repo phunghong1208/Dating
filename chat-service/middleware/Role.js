@@ -1,5 +1,5 @@
 const BaseMiddleware = require('../middleware/Base');
-const RoleUtil = require('../../utils/roles');
+const RoleUtil = require('../utils/roles');
 
 class RoleMiddleware extends BaseMiddleware {
   handle(req, res, next) {

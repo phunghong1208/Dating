@@ -3,7 +3,7 @@
  * @description Schema of CovidVaccine.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class CovidVaccine extends BaseModel {
   constructor() {

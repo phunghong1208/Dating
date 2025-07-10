@@ -3,7 +3,7 @@
  * @description Schema of Education.
  */
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Education extends BaseModel {
   constructor() {

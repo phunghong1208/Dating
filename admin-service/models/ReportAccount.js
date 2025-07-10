@@ -1,9 +1,9 @@
 'use strict';
 
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
-const DBUtils = require('../../utils/Database');
-const Utils = require('../../utils');
+const Entities = require('../databases/entities');
+const DBUtils = require('../utils/Database');
+const Utils = require('../utils');
 
 class ReportAccount extends BaseModel {
   constructor() {

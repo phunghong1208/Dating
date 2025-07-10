@@ -3,7 +3,7 @@
  * @description Schema of Ethnicity: Sắc tộc
  */
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Ethnicity extends BaseModel {
   constructor() {

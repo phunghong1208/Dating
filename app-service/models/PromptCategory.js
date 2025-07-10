@@ -3,7 +3,7 @@
  * @description Schema of PromptCategory.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class PromptCategory extends BaseModel {
   constructor() {

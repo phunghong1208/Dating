@@ -1,6 +1,6 @@
 const moment = require('moment');
 const XLSX = require('xlsx-style');
-const Config = require('../../config');
+const Config = require('../config');
 const Utils = require('./index');
 
 const EXCEL_FORMAT_TEXT = '@';

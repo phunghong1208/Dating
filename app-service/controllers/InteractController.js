@@ -1,16 +1,16 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const HttpUtil = require('../../utils/http');
-const DBUtil = require('../../utils/Database');
+const HttpUtil = require('../utils/http');
+const DBUtil = require('../utils/Database');
 const BaseController = require('../../Base');
 const Activity = require('../models/Activity');
 const Image = require('../models/Image');
 const PromptAnswer = require('../models/PromptAnswer');
-const Utils = require('../../utils');
+const Utils = require('../utils');
 
 const ServiceClient = require('../services/cards');
-const { actions } = require('../../config');
+const { actions } = require('../config');
 
 /* 
   Thống kê tương tác của người dùng

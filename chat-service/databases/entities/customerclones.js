@@ -7,7 +7,7 @@ const {
   whoSeeYouTypes,
   distanceUnits,
   autoPlayVideoOpts,
-} = require('../config/common');
+} = require('../../config/common');
 const currentTime = () => Math.floor(Date.now() / 1000) * 1000;
 
 module.exports = {
@@ -83,7 +83,7 @@ module.exports = {
     address: { type: String, required: false, index: true }, // Địa chỉ hiện tại
     datingPurpose: { type: String, index: true }, // Mục đích hẹn hò
     languages: [String], // Ngôn ngữ tôi biết
-
+    
     childrenPlan: { type: String, index: true }, // Kế hoạch trẻ em
     // Basic information
     zodiac: { type: String, index: true }, // Cung hoàng đạo
@@ -157,11 +157,9 @@ module.exports = {
     whoSeeYou: { type: String, default: whoSeeYouTypes.everyone }, // config whoSeeYouTypes
   },
 
-  languageMachine: { type: String, index: true },
-
   // Explore
   explore: {
-    verified: { type: Number, default: 0, index: true }, // Xác minh người thật bằng camera, face ID
+    verified: { type: Boolean, default: false, index: true }, // Xác minh người thật bằng camera, face ID
     topics: [String], // Lưu thông tin các topics đã join
   },
 
@@ -202,16 +200,6 @@ module.exports = {
   },
   // Date update
   update: {
-    when: { type: Date, index: true },
-    by: { type: String, index: true },
-  },
-  // Block
-  block: {
-    when: { type: Date, index: true },
-    by: { type: String, index: true },
-  },
-  // unlock
-  unlock: {
     when: { type: Date, index: true },
     by: { type: String, index: true },
   },

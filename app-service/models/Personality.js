@@ -3,7 +3,7 @@
  * @description Schema of Personality.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Personality extends BaseModel {
   constructor() {

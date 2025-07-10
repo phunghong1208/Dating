@@ -3,8 +3,8 @@
  * @description Schema of User.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
-const Utils = require('../../utils');
+const Entities = require('../databases/entities');
+const Utils = require('../utils');
 
 class User extends BaseModel {
   constructor() {

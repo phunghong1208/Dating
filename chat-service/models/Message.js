@@ -3,7 +3,7 @@
  * @description Schema of Message.
  */
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Message extends BaseModel {
   constructor() {

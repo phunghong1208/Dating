@@ -3,7 +3,7 @@
  * @description Schema of LoveStyle.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class LoveStyle extends BaseModel {
   constructor() {

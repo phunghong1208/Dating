@@ -1,7 +1,7 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const HttpUtil = require('../../../utils/http');
+const HttpUtil = require('../../utils/http');
 const BaseController = require('../../../Base');
 const Customer = require('../../models/Customer');
 const Image = require('../../models/Image');

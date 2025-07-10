@@ -3,7 +3,7 @@
  * @description Schema of Prompt.
  */
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Prompt extends BaseModel {
   constructor() {

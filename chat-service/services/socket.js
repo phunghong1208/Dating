@@ -3,10 +3,10 @@
 const BaseService = require('../services/Base');
 const Socket = require('../models/Socket');
 const sk = require('../socket.io');
-const Config = require('../../config');
-const Utils = require('../../utils');
-const Events = require('../databases/events');
-const skEventNames = require('../../config/socket').eventNames;
+const Config = require('../config');
+const Utils = require('../utils');
+const Events = require('../events');
+const skEventNames = require('../config/socket').eventNames;
 
 class Service extends BaseService {
   constructor() {

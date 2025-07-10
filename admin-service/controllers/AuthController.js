@@ -1,11 +1,11 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const AuthUtil = require('../../utils/auth');
-const Utils = require('../../utils/index');
+const AuthUtil = require('../utils/auth');
+const Utils = require('../utils/index');
 const BaseController = require('../../Base');
 const User = require('../models/User');
-const { roles, passwordDefault } = require('../../config');
+const { roles, passwordDefault } = require('../config');
 
 class AuthController extends BaseController {
   constructor() {

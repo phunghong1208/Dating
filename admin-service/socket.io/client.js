@@ -3,9 +3,9 @@
 const useragent = require('express-useragent');
 const to = require('await-to-js').default;
 const Service = require('./services');
-const GeoUtil = require('../../utils/geoip');
-const AuthUtil = require('../../utils/auth');
-const Config = require('../../config');
+const GeoUtil = require('../utils/geoip');
+const AuthUtil = require('../utils/auth');
+const Config = require('../config');
 const ConfigSk = Config.sockets;
 class Client {
   constructor() {

@@ -1,12 +1,12 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const DBUtil = require('../../utils/Database');
-const BaseController = require('../../Base');
+const DBUtil = require('../utils/Database');
+const BaseController = require('../Base');
 const Channel = require('../models/Channel');
 const ServiceClient = require('../services/cards');
-const Config = require('../../config');
-const Utils = require('../../utils');
+const Config = require('../config');
+const Utils = require('../utils');
 const Image = require('../models/Image');
 const PromptAnswer = require('../models/PromptAnswer');
 /* 

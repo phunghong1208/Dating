@@ -2,8 +2,8 @@
 
 const mongoose = require('mongoose');
 const to = require('await-to-js').default;
-const Utils = require('../../utils');
-const DBUtils = require('../../utils/Database');
+const Utils = require('../utils');
+const DBUtils = require('../utils/Database');
 
 const { NODE_ENV = 'production', DB_LOCALE = 'vi' } = process.env;
 const schemaOptions = {

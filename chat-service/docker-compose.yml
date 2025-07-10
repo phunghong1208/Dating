@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:6.0
+    container_name: heartlink-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: bachasoft
+      MONGO_INITDB_ROOT_PASSWORD: 123654
+      MONGO_INITDB_DATABASE: bachasoft
+    volumes:
+      - mongodb-data:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    networks:
+      - heartlink-network
+
+  # Chat Service
+  chat-service:
+    build: .
+    ports:
+      - "3002:3002"
+    environment:
+      - PORT=3002
+      - DB_HOST=mongodb
+      - DB_PORT=27017
+      - DB_USER=bachasoft
+      - DB_PASS=123654
+      - DB_NAME=bachasoft
+      - DB_POOL_SIZE=10
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - heartlink-network
+    command: npm start
+
+networks:
+  heartlink-network:
+    driver: bridge
+
+volumes:
+  mongodb-data:

@@ -5,7 +5,7 @@ const BaseController = require('./BaseController');
 const Model = require('../models/Customer');
 const Image = require('../models/Image');
 
-const Configs = require('../../config');
+const Configs = require('../config');
 
 /*
   Xem hàm mẫu BaseController nếu muốn viết lại các action

@@ -7,8 +7,8 @@ const Image = require('../models/Image');
 const Message = require('../models/Message');
 const ServiceSocket = require('../services/socket');
 
-const Utils = require('../../utils');
-const HttpUtil = require('../../utils/http');
+const Utils = require('../utils');
+const HttpUtil = require('../utils/http');
 
 class Controller extends BaseController {
   constructor() {

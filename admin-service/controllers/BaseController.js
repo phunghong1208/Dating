@@ -1,9 +1,9 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const Utils = require('../../utils/index');
-const DBUtil = require('../../utils/Database');
-const HttpUtil = require('../../utils/http');
+const Utils = require('../utils/index');
+const DBUtil = require('../utils/Database');
+const HttpUtil = require('../utils/http');
 
 class BaseController {
   constructor(child) {

@@ -6,8 +6,8 @@ const Model = require('../models/Customer');
 const mImage = require('../models/Image');
 const PromptAnswer = require('../models/PromptAnswer');
 
-const Utils = require('../../utils');
-const HttpUtil = require('../../utils/http');
+const Utils = require('../utils');
+const HttpUtil = require('../utils/http');
 
 /*
   Xem hàm mẫu BaseController nếu muốn viết lại các action

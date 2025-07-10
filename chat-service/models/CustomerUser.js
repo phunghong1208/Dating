@@ -1,7 +1,7 @@
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
-const Utils = require('../../utils');
-const DBUtils = require('../../utils/Database');
+const Entities = require('../databases/entities');
+const Utils = require('../utils');
+const DBUtils = require('../utils/Database');
 
 class CustomerUser extends BaseModel {
   constructor() {

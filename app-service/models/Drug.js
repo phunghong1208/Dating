@@ -3,7 +3,7 @@
  * @description Schema of Drug.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Drug extends BaseModel {
   constructor() {

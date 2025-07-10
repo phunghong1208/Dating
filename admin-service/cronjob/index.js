@@ -12,7 +12,7 @@ const to = require('await-to-js').default;
 const { API_TOKEN_TINDER } = process.env;
 const ModelJob = require('../models/Job');
 const Model = require('../models/Customer');
-const EnvUtil = require('../../utils/env');
+const EnvUtil = require('../utils/env');
 
 const TimeZoneVN = 'Asia/Ho_Chi_Minh';
 const TAG = '[cronjob/cron.js]';

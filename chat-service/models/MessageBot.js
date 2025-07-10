@@ -3,7 +3,7 @@
  * @description Schema of MessageBot.
  */
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class MessageBot extends BaseModel {
   constructor() {

@@ -2,7 +2,7 @@
 
 const to = require('await-to-js').default;
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 const Zodiac = require('../models/Zodiac');
 const Education = require('../models/Education');
 const FamilyPlan = require('../models/FamilyPlan');

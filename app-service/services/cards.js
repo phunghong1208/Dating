@@ -2,7 +2,7 @@
 
 const to = require('await-to-js').default;
 const BaseService = require('./Base');
-const HttpUtil = require('../../utils/http');
+const HttpUtil = require('../utils/http');
 const Customer = require('../models/Customer');
 const Interest = require('../models/Interest');
 const CustomerClone = require('../models/CustomerClone');
@@ -13,9 +13,9 @@ const staticServices = require('./static');
 
 const Activity = require('../models/Activity');
 const Topic = require('../models/Topic');
-const Utils = require('../../utils');
+const Utils = require('../utils');
 const { forEach } = require('lodash');
-const { l } = require('../../utils/log');
+const { l } = require('../utils/log');
 
 class Service extends BaseService {
   constructor() {

@@ -2,7 +2,7 @@
 
 const Router = require('../libs/Router');
 const { _crud } = require('./handle');
-const { roles } = require('../../config');
+const { roles } = require('../config');
 
 
 const ctrlAuth = require('../controllers/AuthController');

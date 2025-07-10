@@ -2,8 +2,8 @@
 
 const to = require('await-to-js').default;
 const BaseService = require('./Base');
-const Utils = require('../../utils/index');
-const DBUtils = require('../../utils/Database');
+const Utils = require('../utils/index');
+const DBUtils = require('../utils/Database');
 const Customer = require('../models/Customer');
 const Channel = require('../models/Channel');
 const Message = require('../models/Message');

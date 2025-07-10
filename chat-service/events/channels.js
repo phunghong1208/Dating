@@ -1,5 +1,5 @@
 const BaseEvent = require('./base');
-const Channel = require('../../models/Channel');
+const Channel = require('../models/Channel');
 
 class EventChannel extends BaseEvent {
   constructor() {

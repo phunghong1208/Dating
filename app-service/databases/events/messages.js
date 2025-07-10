@@ -1,7 +1,7 @@
 const BaseEvent = require('./base');
 const Message = require('../../models/Message');
 const UserChannel = require('../../models/UserChannel');
-const Utils = require('../../../utils');
+const Utils = require('../../utils');
 
 class EventMessage extends BaseEvent {
   constructor() {

@@ -1,7 +1,7 @@
 const to = require('await-to-js').default;
-const AuthUtil = require('../../utils/auth');
-const HttpUtil = require('../../utils/http');
-const Utils = require('../../utils/index');
+const AuthUtil = require('../utils/auth');
+const HttpUtil = require('../utils/http');
+const Utils = require('../utils/index');
 const User = require('../models/Customer');
 const TAG = '[Header-Validation]';
 

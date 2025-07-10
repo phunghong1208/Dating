@@ -1,11 +1,11 @@
 'use strict';
 
-const Router = require('../../admin-service/libs/Router');
+const Router = require('../libs/Router');
 // Middleware
 const middleware = require('../middleware');
 const ExtendResponse = middleware.extendResponse;
 // header validation
-const header_validation = require('../../admin-service/routes/header_validation');
+const header_validation = require('../routes/header_validation');
 // Controllers
 const ctrlFriend = require('../controllers/FriendController');
 const ctrlChatBox = require('../controllers/IndexController');

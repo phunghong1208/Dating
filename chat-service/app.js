@@ -2,7 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const { dbConnectURI, options } = require('../config/database');
+// Sửa lại import config database cho đúng
+const { dbConnectURI, options } = require('./config/database');
 
 mongoose.set('strictQuery', false);
 
@@ -27,8 +28,11 @@ app.get('/health', (req, res) => {
 // Connect to MongoDB and then load routes
 mongoose.connect(dbConnectURI, options)
   .then(() => {
-    const ctrlChatBox = require('./controllers/IndexController');
-    require('./routes/chat')(app, ctrlChatBox);
+    console.log('Connected to MongoDB');
+    console.log('Mongoose connection state:', mongoose.connection.readyState);
+    
+    // Routes chỉ được load sau khi connect thành công
+    require('./routes/chat')(app);
   })
   .catch(err => {
     console.error('MongoDB connection error:', err);

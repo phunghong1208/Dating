@@ -1,0 +1,160 @@
+{
+  "ok": "OK",
+  "unauthorized": "検証エラー：無効なトークン",
+  "unauthenticated": "メールアドレスまたはパスワードが間違っています",
+  "unprocessable": "処理できません",
+  "Bad_Request": "要求の形式が正しくありません",
+  "Disable_Api": "APIは無効になっています",
+  "Forbidden": "Forbidden",
+  "Not_Found": "見つかりません",
+  "Not_Implement": "Function has not implemented yet",
+  "Internal_Server_Error": "内部サーバーエラー",
+  "Request_Timeout": "要求タイムアウト",
+  "Permission_Denied": "あなたはこの操作を行う権限を持っていません",
+  "Token_Expired": "ログインセッションの期限が切れました。 トークンを取り戻してください。",
+  "Disable_Login": "あなたはログインできません。アカウントが無効にされました。",
+  "Cannot_Delete": {
+    "record": "あなたはこのデータを削除する権限を持っていません",
+    "file": "このファイルを削除できません"
+  },
+  "Errors": {
+    "general": "エラーが発生しましたので、もう一度お試しください。",
+    "create": "データを追加するうちにエラーが発生しました%0",
+    "update": "データを更新するうちにエラーが発生しました%0",
+    "delete": "データを削除するうちにエラーが発生しました%0",
+    "login": "メールまたはパスワードが間違っています。",
+    "register": "%0アカウントを追加できません",
+    "Cannot_Change_Order_Status": "データ更新で受注の状態を変更できません",
+    "Change_Password": "パスワードを変更するうちにエラーが発生しました %0",
+    "Change_Order_Status": "受注の状態を更新するうちにエラーが発生しました。%0",
+    "Email_Invalid": "メールアドレスは不正です (%0)",
+    "Load_Detail_Failed": "詳細データを取得するうちにエラーが発生しました %0",
+    "Load_Lists_Failed": "データを取得するうちにエラーが発生しました %0",
+    "New_Old_Pw_Must_Different": "新しパスワードは現在のパスワードと異なる必要があります",
+    "Incorrect_Password": "パスワードが間違っています。パスワードを忘れた場合は、管理者に連絡してください。",
+    "Old_Pw_Not_Match": "現在のパスワードが正しくありません",
+    "Pw_Len_Warning": "パスワードには %0文字~ %1文字に入力してください ",
+    "Pw_Not_Match": "パスワードが一致しません。再入力してください !",
+    "Reset_Password": "このアカウントのパスワードをリセットできません。",
+    "Export_Excel": "Excelファイル出力にはエラーが発生しました。%0",
+    "accounts": {
+      "Not_Activated": "アカウントは有効化されていません。 有効化コードを取得するには、メールアドレスを入力してください。",
+      "Activation_Expired": "有効化コードの有効期限が切れました。",
+      "Activation_Invalid": "有効化コードは不正です。"
+    },
+    "contracts": {
+      "Status_InValid": "契約の状態が無効です。"
+    },
+    "deploy": "%0展開に失敗しました",
+    "unDeploy": "%0展開停止に失敗しました",
+    "files": {
+      "read": "ファイルの読み取り中にエラーが発生しました。%0",
+      "rename": "ファイル名変更にはエラーが発生しました。%0",
+      "upload": "ファイルアップロードにはエラーが発生しました。%0"
+    },
+    "action": "操作は参加/開始/停止でなければなりません",
+    "mediaType": "メディアタイプはビデオ・オーディオでなければなりません。",
+    "updateNothing": "更新するものはありません",
+    "No_Free_Room": "空のルームが見つかりません",
+    "Not_Enough_Space": "データをアップロードするための十分な空き容量がありません"
+  },
+  "Success": {
+    "general": "成功!",
+    "list": "リストを取得しました。",
+    "create": "データが追加されました。",
+    "update": "データが更新されました。",
+    "delete": "データが削除されました。",
+    "upload": "データがアップロードされました。",
+    "restore": "Khôi phục dữ liệu thành công",
+    "login": "ログインしました。",
+    "register": "アカウントが登録されました。",
+    "Change_Password": "パスワードが変更されました。",
+    "Reset_Password": "パスワードが再発行されました。新しいパスワードでログインしてください。",
+    "accounts": {
+      "delete": "%0アカウントが削除されました。",
+      "restore": "Khôi phục tài khoản thành công",
+      "Send_Mail_Created": "%0アカウントが作成されました。アクセス情報は登録された%1メールアドレスへ送信しました。"
+    },
+    "deploy": "展開しました",
+    "unDeploy": "展開を停止しました",
+    "Export_Excel": "Excelファイルが正常にエクスポートされました",
+    "Set_Wifi": "デバイスが設定されました。10秒後自動的に再起動されます。",
+    "verify": "Verification information is being processed. Please wait a few more minutes to complete your account verification."
+  },
+  "Message": {},
+  "Load_Lists_Errors": {
+    "general": "表示できません: %0",
+    "user": "%0ユーザーリストが表示できません。",
+    "company": "%0履歴が表示できません。",
+    "customer": "%0履歴が表示できません。",
+    "area": "%0エリア一覧が表示できません。"
+  },
+  "Found_Errors": {
+    "general": "%0で絞り込むことができません。エラーが発生しました。%0",
+    "user": "ユーザーで絞り込むことができません。エラーが発生しました。%0",
+    "company": "顧客で絞り込むことができません。エラーが発生しました。%0",
+    "customer": "顧客で絞り込むことができません。エラーが発生しました。%0",
+    "area": "エリアで絞り込むことができません。エラーが発生しました。%0"
+  },
+  "Exists": {
+    "general": "%0が既に存在しています。",
+    "user": "%0のユーザーが既に存在しています。",
+    "company": "%0の顧客が既に存在しています。",
+    "customer": "%0の顧客が既に存在しています。",
+    "area": "%0のエリアが既に存在しています。"
+  },
+  "Not_Exists": {
+    "general": "%0が存在しません。",
+    "user": "%0のアカウントが存在しません。",
+    "company": "%0の顧客が存在しません。",
+    "customer": "%0の顧客が存在しません。",
+    "area": "%0のエリアが存在しません。"
+  },
+  "Not_Founds": {
+    "general": "%0が存在しません。",
+    "Request_Object": "不正なリクエスト。オブジェクトが必要です。",
+    "file": "%0のファイルが見つかりません。"
+  },
+  "Required": {
+    "general": "この項目は必須項目です。",
+    "action": "操作は必須です。",
+    "No_Files_To_Upload": "Không có tệp tin được tải lên."
+  },
+  "Unique": {
+    "area": {
+      "code": "%0のエリアコードが既存しています。"
+    },
+    "company": {
+      "code": "%0の顧客コードが既存しています。"
+    },
+    "customer": {
+      "oAuth2Id": "User %0 is already taken. Please enter another value.",
+      "email": "%0のメールアドレスが既存しています。",
+      "phone": "Phone number %0 is already taken. Please enter another value."
+    },
+    "user": {
+      "code": "%0のユーザーのコードが既存しています。",
+      "email": "%0のメールアドレスが既存しています。"
+    }
+  },
+  "SendMail": {
+    "errors": "メール送信には失敗しました。%0"
+  },
+  "Table": {
+    "No": "No",
+    "address": "住所",
+    "ipAddress": "IPアドレス",
+    "area": "アリア",
+    "code": "コード",
+    "company": "会社名",
+    "customer": "顧客",
+    "capacity": "収納サイズ",
+    "createdAt": "作成日",
+    "email": "メールアドレス",
+    "date": "日付",
+    "time": "時間",
+    "phone": "電話番号",
+    "status": "状態",
+    "uptime": "動作時間"
+  }
+}

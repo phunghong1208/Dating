@@ -3,7 +3,7 @@
  * @description Schema of Children.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Children extends BaseModel {
   constructor() {

@@ -3,7 +3,7 @@
  * @description Schema of Report.
  */
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Report extends BaseModel {
   constructor() {

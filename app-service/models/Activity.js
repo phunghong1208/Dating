@@ -3,8 +3,8 @@
  * @description Schema of Activity.
  */
 const BaseModel = require('../models/Base');
-const Entities = require('../../shared-entities');
-const DBUtils = require('../../utils/Database');
+const Entities = require('../databases/entities');
+const DBUtils = require('../utils/Database');
 
 class Activity extends BaseModel {
   constructor() {

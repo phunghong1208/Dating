@@ -3,9 +3,9 @@
  * @description Schema of Channel.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
-const Config = require('../../config');
-const Utils = require('../../utils');
+const Entities = require('../databases/entities');
+const Config = require('../config');
+const Utils = require('../utils');
 
 class Channel extends BaseModel {
   constructor() {

@@ -4,8 +4,8 @@
 const Socket = require('../models/Socket');
 const Channel = require('../models/Channel');
 const Device = require('../models/Device');
-const Events = require('../databases/events');
-const ConfigSk = require('../../config').sockets;
+const Events = require('../events');
+const ConfigSk = require('../config').sockets;
 
 class Service {
   constructor() {

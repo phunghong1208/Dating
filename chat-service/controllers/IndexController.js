@@ -1,8 +1,8 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const HttpUtil = require('../../utils/http');
-const BaseController = require('../../Base');
+const HttpUtil = require('../utils/http');
+const BaseController = require('../Base');
 const Customer = require('../models/Customer');
 const Device = require('../models/Device');
 const Message = require('../models/Message');
@@ -10,9 +10,9 @@ const ServiceChannel = require('../services/channels');
 const ServiceSocket = require('../services/socket');
 const { pushCloudMessaging } = require('../services/firebase');
 
-const Utils = require('../../utils');
-const ConfigMsg = require('../../config');
-const Events = require('../databases/events');
+const Utils = require('../utils');
+const ConfigMsg = require('../config');
+const Events = require('../events');
 
 class Controller extends BaseController {
   constructor() {

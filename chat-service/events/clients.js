@@ -1,6 +1,6 @@
 const BaseEvent = require('./base');
-const Customer = require('../../models/Customer');
-const Socket = require('../../models/Socket');
+const Customer = require('../models/Customer');
+const Socket = require('../models/Socket');
 
 class EventClient extends BaseEvent {
   constructor() {

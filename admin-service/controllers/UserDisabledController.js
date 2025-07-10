@@ -1,10 +1,10 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const HttpUtil = require('../../utils/http');
+const HttpUtil = require('../utils/http');
 const BaseController = require('./BaseController');
 const User = require('../models/User');
-const { roles } = require('../../config');
+const { roles } = require('../config');
 const RolesNotAllow = [roles.root, roles.admin];
 
 class Controller extends BaseController {

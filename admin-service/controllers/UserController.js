@@ -1,13 +1,13 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const AuthUtil = require('../../utils/auth');
-const FileUtil = require('../../utils/files');
-const HttpUtil = require('../../utils/http');
-const Utils = require('../../utils/index');
+const AuthUtil = require('../utils/auth');
+const FileUtil = require('../utils/files');
+const HttpUtil = require('../utils/http');
+const Utils = require('../utils/index');
 const BaseController = require('./BaseController');
 const User = require('../models/User');
-const { configDir, roles } = require('../../config');
+const { configDir, roles } = require('../config');
 
 /*
  *** Quản lý tài khoản khác admin

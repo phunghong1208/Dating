@@ -3,7 +3,7 @@
  * @description Schema of Payment.
  */
 const BaseModel = require('./Base');
-const Entities = require('../../shared-entities');
+const Entities = require('../databases/entities');
 
 class Payment extends BaseModel {
   constructor() {
