@@ -10,7 +10,6 @@ const ServiceChannel = require('../services/channels');
 const ServiceSocket = require('../services/socket');
 const { pushCloudMessaging } = require('../services/firebase');
 
-const Utils = require('../utils');
 const ConfigMsg = require('../config');
 const Events = require('../events');
 
