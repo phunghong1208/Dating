@@ -1,0 +1,45 @@
+{
+  "info": {
+    "name": "Chat Service API",
+    "description": "API collection for HeartLink Chat Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:3002", "type": "string" },
+    { "key": "token", "value": "", "type": "string" }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      { "key": "token", "value": "{{token}}", "type": "string" }
+    ]
+  },
+  "item": [
+    {
+      "name": "Friend Management",
+      "item": [
+        { "name": "Get Friends", "request": { "method": "GET", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/friends", "host": ["{{baseUrl}}"], "path": ["api", "v1", "friends"] } } },
+        { "name": "Get New Friends", "request": { "method": "GET", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/friends/new", "host": ["{{baseUrl}}"], "path": ["api", "v1", "friends", "new"] } } }
+      ]
+    },
+    {
+      "name": "Channel Management",
+      "item": [
+        { "name": "Get Channel ID", "request": { "method": "GET", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/getChannelId", "host": ["{{baseUrl}}"], "path": ["api", "v1", "getChannelId"] } } },
+        { "name": "Get Channels", "request": { "method": "GET", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/channels", "host": ["{{baseUrl}}"], "path": ["api", "v1", "channels"] } } },
+        { "name": "Remove Channel", "request": { "method": "PUT", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/channels/:chatId/remove", "host": ["{{baseUrl}}"], "path": ["api", "v1", "channels", ":chatId", "remove"] } } }
+      ]
+    },
+    {
+      "name": "Message Management",
+      "item": [
+        { "name": "Get Messages", "request": { "method": "GET", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/channels/:chatId/messages", "host": ["{{baseUrl}}"], "path": ["api", "v1", "channels", ":chatId", "messages"] } } },
+        { "name": "Add Message To Channel", "request": { "method": "POST", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/channels/:chatId/add-message", "host": ["{{baseUrl}}"], "path": ["api", "v1", "channels", ":chatId", "add-message"] } } },
+        { "name": "Send Message (Auto Create Channel)", "request": { "method": "POST", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/messages/add", "host": ["{{baseUrl}}"], "path": ["api", "v1", "messages", "add"] } } },
+        { "name": "Edit Message", "request": { "method": "PUT", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/messages/:msgId/edit", "host": ["{{baseUrl}}"], "path": ["api", "v1", "messages", ":msgId", "edit"] } } },
+        { "name": "Remove Message", "request": { "method": "PUT", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/messages/:msgId/remove", "host": ["{{baseUrl}}"], "path": ["api", "v1", "messages", ":msgId", "remove"] } } },
+        { "name": "Update Message Status", "request": { "method": "POST", "header": [], "url": { "raw": "{{baseUrl}}/api/v1/messages/update-status", "host": ["{{baseUrl}}"], "path": ["api", "v1", "messages", "update-status"] } } }
+      ]
+    }
+  ]
+} 
