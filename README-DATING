@@ -288,3 +288,6 @@ db.activities.find().pretty()
 db.payments.find().pretty()
 db.admins.find().pretty()
 db.static_data.find().pretty()
+
+npx depcheck app-service
+npx madge --orphans app-service
