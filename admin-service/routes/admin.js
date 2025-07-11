@@ -32,14 +32,6 @@ const ctrlMessage = require('../controllers/MessageController');
 
 const ctrlPrompt = require('../controllers/PromptCtrl');
 
-const ctrlClient = require('../controllers/AI/ClientController');
-// Controller Devops
-const ctrlCronJob = require('../controllers/Devops/CronController');
-const ctrlDevOps = require('../controllers/Devops/DevController');
-const ctrlTest = require('../controllers/Devops/TestController');
-const ctrlIterate = require('../controllers/Devops/IterateController');
-// Controller ChatBox
-//const ctrlDevChat = require('../controllers/Chat/DevController');
 
 // Customer User
 const ctrlCustomerUser = require('../controllers/CustomerUserController');
@@ -72,35 +64,7 @@ module.exports = app => {
   router.group({ prefix: '/api' }, router => {
     // Route authentication
     router.post('/login', ctrlAuth.login);
-    router.post('/iterate', ctrlIterate.run);
-    // Routes ai
-    router.group('/ai', router => {
-      router.group('/clients', router => {
-        router.get('/:uid', ctrlClient.getProfileWithoutAuth);
-        router.post('/verified', ctrlClient.verified);
-        router.post('/smart-photo', ctrlClient.aiUpdatePhotos);
-        router.post('/update-avatar-ai', ctrlClient.aiUpdateStatusImage);
-      });
-    });
 
-    // Routes test
-    router.group('/test', router => {
-      router.post('/verify-token-id', ctrlTest.verifyTokenId);
-      router.post('/send-tinder-otp', ctrlTest.getTinderOtpCode);
-      router.post('/fetch-tinder-cards', ctrlTest.fetchCards);
-      router.post('/get-owner-tinder', ctrlTest.getOwnerTinder);
-      router.post('/get-user-tinder', ctrlTest.getUserTinder);
-      router.post(
-        '/tinder/get-available-descriptors',
-        ctrlTest.getAvailableDescriptors,
-      );
-      router.post(
-        '/tinder/clone-avaiable-descriptors',
-        ctrlTest.cloneAvaiableDescriptors,
-      );
-      router.post('/tinder/clone-interests', ctrlTest.cloneInterests);
-      router.get('/clients/:id/sockets', ctrlTest.getSessionSokets);
-    });
     // TODO Required authentication
     router.group({ middlewares: [middleware.auth] }, router => {
       // TODO Routes all roles
@@ -115,39 +79,6 @@ module.exports = app => {
       //   router.post('/messages/add', ctrlDevChat.sendMessage);
       //   router.post('/test-events', ctrlDevChat.testEventSocket);
       // });
-
-      // TODO Routes roles = [roles.root, roles.admin]
-      router.group(
-        { middlewares: [middleware.role(roles.root, roles.admin)] },
-        router => {
-          // Routes password
-          // router.post('/reset-password', ctrlAuth.resetPassword);
-          router.put('/reset-password/:userId', ctrlAuth.resetDefaultPassword);
-          router.put('/lock-account/:userId', ctrlAuth.lockAccount);
-          router.put('/unlock-account/:userId', ctrlAuth.unlockAccount);
-          // Routes cron jobs
-          router.post('/cron/start', ctrlCronJob.startJob);
-          router.post('/cron/stop', ctrlCronJob.stopJob);
-          // Router devops
-          router.group({ prefix: '/dev' }, router => {
-            router.get('/channels/:chatId', ctrlDevOps.getDetailChannel);
-            router.get('/check-dup-channels', ctrlDevOps.checkDupChannels);
-            router.get('/check-activities', ctrlDevOps.checkActivities);
-            router.get('/check-data-reports', ctrlDevOps.checkDataReports);
-            router.get('/check-data-boost', ctrlDevOps.checkDataBoost);
-            router.get('/clean-session-sk', ctrlDevOps.cleanSessionSockets);
-            router.post(
-              '/iterate-user-channels',
-              ctrlDevOps.iterateSummaryUserChannel,
-            );
-            router.post(
-              '/iterate-activated-channels',
-              ctrlDevOps.iterateActivatedChannel,
-            );
-            router.post('/iterate', ctrlIterate.run);
-          });
-        },
-      );
 
       // TODO Routes role = roles.admin
       router.group(requireAdmin, router => {
