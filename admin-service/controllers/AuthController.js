@@ -3,7 +3,7 @@
 const to = require('await-to-js').default;
 const AuthUtil = require('../utils/auth');
 const Utils = require('../utils/index');
-const BaseController = require('../../Base');
+const BaseController = require('../Base');
 const User = require('../models/User');
 const { roles, passwordDefault } = require('../config');
 

@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const { dbConnectURI, options } = require('../config/database');
+const { dbConnectURI, options } = require('./config/database');
 
 mongoose.set('strictQuery', false);
 

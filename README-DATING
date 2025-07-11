@@ -266,7 +266,10 @@ cd app-service && npm install
 cd chat-service && npm install  
 cd admin-service && npm install
 
-   lsof -i :3001
-   kill -9 12345
+lsof -i :3001
+kill -9 12345
 
-   find . -type f -name "*.js" -exec sed -i '' "s|require('../utils/|require('../utils/|g" {} +
+
+mongodump --db bachasoft --out /tmp/backup_bachasoft
+docker cp /tmp/backup_bachasoft heartlink-mongodb:/backup_bachasoft
+docker exec -it heartlink-mongodb mongorestore -u bachasoft -p 123654 --authenticationDatabase bachasoft --db bachasoft /backup_bachasoft/bachasoft

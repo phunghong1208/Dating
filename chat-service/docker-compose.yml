@@ -38,7 +38,7 @@ services:
       - /app/node_modules
     networks:
       - heartlink-network
-    command: npm start
+    command: npx nodemon app.js
 
 networks:
   heartlink-network:

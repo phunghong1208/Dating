@@ -3,7 +3,7 @@
 const to = require('await-to-js').default;
 const HttpUtil = require('../utils/http');
 const Utils = require('../utils');
-const BaseController = require('../../Base');
+const BaseController = require('../Base');
 const Image = require('../models/Image');
 const HistoryProfile = require('../models/HistoryProfile');
 

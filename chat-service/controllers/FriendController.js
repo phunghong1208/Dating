@@ -51,16 +51,21 @@ class Controller extends BaseController {
     }
     let [err, rs] = await to(Promise.all(promises));
     if (err) return this.throwErr(err);
-
-    let data = rs[0];
-    let total = rs[1] || data.length;
+    if (!Array.isArray(rs)) {
+      console.log('rs is not array:', rs);
+      rs = [];
+    }
+    let data = Array.isArray(rs[0]) ? rs[0] : [];
+    console.log('data', data);
+    let total = typeof rs[1] === 'number' ? rs[1] : data.length;
     let lists = [],
       friendIds = [],
       objMapStatus = {},
       mapChannels = {};
-    if (data && data.length) {
+    if (Array.isArray(data) && data.length) {
       data.map(item => {
-        let { clientIds = [], status, channelId } = item;
+        let { clientIds = [], status, channelId } = item || {};
+        if (!Array.isArray(clientIds)) clientIds = [];
         clientIds.map(id => {
           if (id != authUser._id && friendIds.indexOf(id) == -1) {
             friendIds.push(id);
@@ -69,12 +74,15 @@ class Controller extends BaseController {
           }
         });
       });
-      [err, lists] = await to(this.sClient.getClients(friendIds));
+      let clientErr, clientLists;
+      [clientErr, clientLists] = await to(this.sClient.getClients(friendIds));
+      if (clientErr) return this.throwErr(clientErr);
+      lists = Array.isArray(clientLists) ? clientLists : [];
       lists = await Promise.all(
         lists.map(async element => {
+          if (!element) return null;
           const clonedItem = Utils.cloneObject(element);
           let { ...obj } = clonedItem;
-
           const pipeline = [
             {
               $match: {
@@ -83,12 +91,9 @@ class Controller extends BaseController {
                   $exists: true,
                   $in: [0, 1, 2],
                 },
-              }, // Điều kiện userId
+              },
             },
-
-            {
-              $unwind: '$avatars',
-            },
+            { $unwind: '$avatars' },
             {
               $match: {
                 'avatars.reviewerStatus': {
@@ -100,31 +105,26 @@ class Controller extends BaseController {
             {
               $group: {
                 _id: '$_id',
-                avatars: { $push: '$avatars' }, // Gom các avatar vào một mảng mới
+                avatars: { $push: '$avatars' },
               },
             },
           ];
-          let resultImage = await this.mImage.execAggregate(pipeline);
-
-          let resultPrompt = await this.mPromptAnswer.getByIdsUserId(
-            element._id,
-          );
-
-          if (resultImage.length !== 0) {
-            obj.profiles.avatars = [...resultImage[0].avatars];
+          let resultImage = await this.mImage.execAggregate(pipeline) || [];
+          let resultPrompt = await this.mPromptAnswer.getByIdsUserId(element._id) || {};
+          if (Array.isArray(resultImage) && resultImage.length !== 0) {
+            obj.profiles.avatars = [...(resultImage[0].avatars || [])];
           } else {
             obj.profiles.avatars = [];
           }
-          if (resultPrompt) {
+          if (resultPrompt && Array.isArray(resultPrompt.promptAnswers)) {
             obj.profiles.prompts = [...resultPrompt.promptAnswers];
+          } else {
+            obj.profiles.prompts = [];
           }
-
           return obj;
-        }),
+        })
       );
-      lists = lists.filter(x => x.profiles.avatars != 0);
-
-      if (err) return this.throwErr(err);
+      lists = lists.filter(x => x && Array.isArray(x.profiles.avatars) && x.profiles.avatars.length !== 0);
       lists = this.buildFriendResponse(
         lists,
         authUser,

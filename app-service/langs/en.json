@@ -1,0 +1,161 @@
+{
+  "ok": "OK",
+  "unauthorized": "UnauthorizedError: invalid token",
+  "unauthenticated": "Unauthenticated. User or password was invalid!",
+  "unprocessable": "Unprocessable entity",
+  "Bad_Request": "Bad request",
+  "Disable_Api": "API was already disabled",
+  "Forbidden": "Forbidden",
+  "Not_Found": "Not found",
+  "Not_Implement": "Function has not implemented yet",
+  "Internal_Server_Error": "Internal server error",
+  "Request_Timeout": "Request Timeout",
+  "Permission_Denied": "Permission denied",
+  "Token_Expired": "Login session expired.",
+  "Disable_Login": "Unable to login. Your account has been locked.",
+  "Cannot_Delete": {
+    "record": "You have not permission for delete this",
+    "file": "You can not delete this file"
+  },
+  "Errors": {
+    "general": "An error occurred. Please try again",
+    "create": "Create failed: %0",
+    "update": "Update failed: %0",
+    "delete": "Delete failed: %0",
+    "login": "Email or password is incorrect",
+    "register": "Register failed: %0",
+    "Cannot_Change_Order_Status": "You can not change order status by update order information",
+    "Change_Password": "Change password failed: %0",
+    "Change_Order_Status": "Change order status failed: %0",
+    "Email_Invalid": "Invalid email (%0)",
+    "Load_Detail_Failed": "Load detail failed: %0",
+    "Load_Lists_Failed": "Load lists failed: %0",
+    "New_Old_Pw_Must_Different": "New password must be different from old password",
+    "Incorrect_Password": "The password is incorrect. If you have forgotten your password, please contact your administrator for assistance.",
+    "Old_Pw_Not_Match": "Old password does not match",
+    "Pw_Len_Warning": "Password length invalid",
+    "Pw_Not_Match": "Confirm password does not match. Please try again.",
+    "Reset_Password": "Cannot reset password for this account.",
+    "Export_Excel": "Export excel failed: %0",
+    "accounts": {
+      "Not_Activated": "This account has not activated. Please enter your email to receive an activation code.",
+      "Activation_Expired": "Activation expired.",
+      "Activation_Invalid": "Activation code is invalid."
+    },
+    "contracts": {
+      "Status_InValid": "The status value is invalid."
+    },
+    "deploy": "Deploy failed: %0",
+    "unDeploy": "Undeploy failed: %0",
+    "files": {
+      "read": "Error while reading file: %0",
+      "rename": "Rename file failed: %0",
+      "upload": "Upload files failed: %0"
+    },
+    "action": "Action must be join/start/stop",
+    "mediaType": "Media type must be video/audio",
+    "updateNothing": "Nothing to Update",
+    "No_Free_Room": "Not found free room",
+    "Not_Enough_Space": "Not enough free space to store uploaded files"
+  },
+  "Success": {
+    "general": "Successfully!",
+    "list": "Get the list of successes",
+    "create": "Create successfully",
+    "update": "Update successfully",
+    "delete": "Delete successfully",
+    "upload": "Upload data successfully",
+    "restore": "Restore data successfully",
+    "login": "Login successfully",
+    "register": "Register successfully",
+    "Change_Password": "Change password successfully",
+    "Reset_Password": "Reset password successfully",
+    "accounts": {
+      "delete": "Account %0 is deleted",
+      "restore": "Account recovery success",
+      "Send_Mail_Created": "Account %0 is created. Login information have been sent to email address %1."
+    },
+    "deploy": "Deploy successfully",
+    "unDeploy": "Undeploy successfully",
+    "Export_Excel": "Successfully exported excel file",
+    "Set_Wifi": "Successful. The device will automatically reboot after 10 seconds",
+    "verify": "Verification information is being processed. Please wait a few more minutes to complete your account verification.",
+    "verifyFalse": "Verification false"
+  },
+  "Message": {},
+  "Load_Lists_Errors": {
+    "general": "Load lists failed: %0",
+    "user": "Load users failed: %0",
+    "company": "Load companies failed: %0",
+    "customer": "Load customers failed: %0",
+    "area": "Load areas failed: %0"
+  },
+  "Found_Errors": {
+    "general": "Find items failed: %0",
+    "user": "Find users failed: %0",
+    "company": "Find companies failed: %0",
+    "customer": "Find customers failed: %0",
+    "area": "Find areas failed: %0"
+  },
+  "Exists": {
+    "general": "Item %0 is already existed.",
+    "user": "User %0 is already existed.",
+    "company": "Company %0 is already existed.",
+    "customer": "Customer %0 is already existed.",
+    "area": "Area %0 is already existed."
+  },
+  "Not_Exists": {
+    "general": "Item %0 does not exist or has been deleted.",
+    "user": "User %0 does not exist.",
+    "company": "Company %0 does not exist.",
+    "customer": "Customer %0 does not exist.",
+    "area": "Area %0 does not exist."
+  },
+  "Not_Founds": {
+    "general": "Item %0 is not found or has been deleted.",
+    "Request_Object": "Invalid request. Object is required.",
+    "file": "File %0 is not found. Please upload."
+  },
+  "Required": {
+    "general": "This field is required",
+    "action": "Action is required",
+    "No_Files_To_Upload": "There are no files to be uploaded"
+  },
+  "Unique": {
+    "area": {
+      "code": "Area code %0 is already taken. Please enter another value."
+    },
+    "company": {
+      "code": "Company code %0 is already taken. Please enter another value."
+    },
+    "customer": {
+      "oAuth2Id": "User %0 is already taken. Please enter another value.",
+      "email": "Email %0 is already taken. Please enter another value.",
+      "phone": "Phone number %0 is already taken. Please enter another value."
+    },
+    "user": {
+      "code": "User code %0 is already taken. Please enter another value.",
+      "email": "Email %0 is already taken. Please enter another value."
+    }
+  },
+  "SendMail": {
+    "errors": "Send mail failed: %0"
+  },
+  "Table": {
+    "No": "STT",
+    "address": "Address",
+    "ipAddress": "IP Address",
+    "area": "Area",
+    "code": "Code",
+    "company": "Company",
+    "customer": "Customer",
+    "capacity": "Capacity",
+    "createdAt": "CreatedAt",
+    "email": "Email",
+    "date": "Date",
+    "time": "Time",
+    "phone": "Phone",
+    "status": "Status",
+    "uptime": "Uptime"
+  }
+}

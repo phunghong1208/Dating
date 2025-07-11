@@ -4,7 +4,7 @@ const moment = require('moment');
 const to = require('await-to-js').default;
 const HttpUtil = require('../utils/http');
 const Utils = require('../utils');
-const BaseController = require('../../Base');
+const BaseController = require('../Base');
 const Activity = require('../models/Activity');
 const Customer = require('../models/Customer');
 const Device = require('../models/Device');
@@ -25,7 +25,7 @@ const {
   timeDurationBoost,
   numLimitedLikes,
 } = require('../config');
-const ServiceSocket = require('../../admin-service/services/socket');
+const ServiceSocket = require('../services/socket');
 const { text } = require('body-parser');
 
 class Controller extends BaseController {

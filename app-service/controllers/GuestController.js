@@ -2,7 +2,7 @@
 
 const to = require('await-to-js').default;
 const HttpUtil = require('../utils/http');
-const BaseController = require('../../Base');
+const BaseController = require('../Base');
 const Service = require('../services/static');
 const API_KEY = 'bachaxPPsb9SCaz7TVJsda7cCD5sshsoft';
 class Controller extends BaseController {

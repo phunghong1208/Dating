@@ -1,90 +1,48 @@
 version: '3.8'
 
 services:
-
-  catalog-management:
-    build:
-      context: ./backend/catalog-management
-      target: dev
+  # MongoDB Database
+  mongodb:
+    image: mongo:6.0
+    container_name: heartlink-mongodb
+    restart: unless-stopped
     ports:
-      - ${BACKEND_CATALOG_MANAGEMENT_PORT}:${BACKEND_CATALOG_MANAGEMENT_PORT}
-    volumes:
-      - ./backend/catalog-management:/app:delegated
-      - /app/node_modules
+      - "27017:27017"
     environment:
-      - PORT=${BACKEND_CATALOG_MANAGEMENT_PORT}
+      MONGO_INITDB_ROOT_USERNAME: bachasoft
+      MONGO_INITDB_ROOT_PASSWORD: 123654
+      MONGO_INITDB_DATABASE: bachasoft
+    volumes:
+      - mongodb-data:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    networks:
+      - heartlink-network
 
-  customer-support:
-    build:
-      context: ./backend/customer-support
-      target: dev
+  # Chat Service
+  app-service:
+    build: .
     ports:
-      - ${BACKEND_CUSTOMER_SUPPORT_PORT}:${BACKEND_CUSTOMER_SUPPORT_PORT}
-    networks:
-      default:
-      customer-support:
-    volumes:
-      - ./backend/customer-support:/app:delegated
-      - /app/node_modules
+      - "3001:3001"
     environment:
-      - PORT=${BACKEND_CUSTOMER_SUPPORT_PORT}
-      - DB_USERNAME=${BACKEND_CUSTOMER_SUPPORT_DB_USERNAME}
-      - DB_PASSWORD=${BACKEND_CUSTOMER_SUPPORT_DB_PASSWORD}
-      - DB_DATABASE=${BACKEND_CUSTOMER_SUPPORT_DB_DATABASE}
-      - DB_HOST=customer-support-db
-      - ORDER_PROCESSING_BASE_URL=http://order-processing:${BACKEND_ORDER_PROCESSING_PORT}
+      - PORT=3001
+      - DB_HOST=mongodb
+      - DB_PORT=27017
+      - DB_USER=bachasoft
+      - DB_PASS=123654
+      - DB_NAME=bachasoft
+      - DB_POOL_SIZE=10
     depends_on:
-      - customer-support-db
-    command: ./wait-for customer-support-db:5432 -- npm run db-migrate-seed
-
-  customer-support-db:
-    image: postgres:12.3
-    environment:
-      - POSTGRES_USER=${BACKEND_CUSTOMER_SUPPORT_DB_USERNAME}
-      - POSTGRES_PASSWORD=${BACKEND_CUSTOMER_SUPPORT_DB_PASSWORD}
-      - POSTGRES_DB=${BACKEND_CUSTOMER_SUPPORT_DB_DATABASE}
-    networks:
-      customer-support:
+      - mongodb
     volumes:
-      - customer-support-db-data:/var/lib/postgresql/data
-
-  order-processing:
-    build:
-      context: ./backend/order-processing
-      target: dev
+      - ./app-service:/app
+      - ./app-service/node_modules:/app/node_modules
     networks:
-      default:
-      order-processing:
-    volumes:
-      - ./backend/order-processing:/app:delegated
-      - /app/node_modules
-    environment:
-      - PORT=${BACKEND_ORDER_PROCESSING_PORT}
-      - DB_USERNAME=${BACKEND_ORDER_PROCESSING_DB_USERNAME}
-      - DB_PASSWORD=${BACKEND_ORDER_PROCESSING_DB_PASSWORD}
-      - DB_DATABASE=${BACKEND_ORDER_PROCESSING_DB_DATABASE}
-      - DB_HOST=order-processing-db
-    depends_on:
-      - order-processing-db
-    command: ./wait-for order-processing-db:5432 -- npm run db-migrate-seed
-
-  order-processing-db:
-    image: postgres:12.3
-    environment:
-      - POSTGRES_USER=${BACKEND_ORDER_PROCESSING_DB_USERNAME}
-      - POSTGRES_PASSWORD=${BACKEND_ORDER_PROCESSING_DB_PASSWORD}
-      - POSTGRES_DB=${BACKEND_ORDER_PROCESSING_DB_DATABASE}
-    networks:
-      order-processing:
-    volumes:
-      - order-processing-db-data:/var/lib/postgresql/data
+      - heartlink-network
+    command: npm start
 
 networks:
-  customer-support:
-    driver: bridge
-  order-processing:
+  heartlink-network:
     driver: bridge
 
 volumes:
-  customer-support-db-data:
-  order-processing-db-data:
+  mongodb-data:

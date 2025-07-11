@@ -2,7 +2,7 @@
 
 const admin = require('firebase-admin');
 const to = require('await-to-js').default;
-const serviceAccount = require('../../firebaseAccountKey.json');
+const serviceAccount = require('../firebaseAccountKey.json');
 const BaseService = require('./Base');
 
 class Service extends BaseService {

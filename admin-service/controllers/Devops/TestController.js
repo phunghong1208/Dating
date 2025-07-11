@@ -1,7 +1,7 @@
 'use strict';
 
 const to = require('await-to-js').default;
-const BaseController = require('../../../Base');
+const BaseController = require('../../Base');
 const HttpUtil = require('../../utils/http');
 const { verifyUID } = require('../../services/firebase');
 const {
