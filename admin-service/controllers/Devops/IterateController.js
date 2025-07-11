@@ -4,7 +4,7 @@ const BaseController = require('../../Base');
 const Customer = require('../../models/Customer');
 const Utils = require('../../utils');
 const { default: to } = require('await-to-js');
-const AvatarConfigs = require('../../../config').avatars;
+const AvatarConfigs = require('../../config').avatars;
 
 class Controller extends BaseController {
   constructor() {

@@ -2,7 +2,7 @@
 /**
  * @description Schema of User.
  */
-const { roles } = require('../../../config');
+const { roles } = require('../../config');
 const currentTime = () => Math.floor(Date.now() / 1000) * 1000;
 
 module.exports = {

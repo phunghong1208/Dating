@@ -164,7 +164,7 @@ class BaseModel {
         query.populate(item);
       });
     }
-    query.select(selection);
+    //query.select(selection);
     if (sorts) query.sort(sorts);
     if (pageSize > 0) {
       query.limit(pageSize);

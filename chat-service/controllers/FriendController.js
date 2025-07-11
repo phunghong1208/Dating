@@ -45,7 +45,8 @@ class Controller extends BaseController {
       isMatched: true,
     };
     let options = this.handleFilter(req);
-    let promises = [this.model.find(cond, options)];
+  
+    let promises = [this.model.find()];
     if (options.pageSize > 0 && options.currentPage > -1) {
       promises.push(this.model.getCount(cond));
     }

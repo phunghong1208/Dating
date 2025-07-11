@@ -1,6 +1,6 @@
 // Khi mongooes ko đáp ứng được thì chuyển qua dùng mongodb native
 const MongoClient = require('mongodb').MongoClient;
-const { dbConnectURI, options } = require('../../../config').mongodb;
+const { dbConnectURI, options } = require('../../config').mongodb;
 const TAG = 'DBUtils';
 
 module.exports = {

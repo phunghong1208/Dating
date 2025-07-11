@@ -2,7 +2,7 @@
 /**
  * @description Schema of Channel.
  */
-const Config = require('../../../config');
+const Config = require('../../config');
 
 module.exports = {
   _id: String, // ULID

@@ -1,0 +1,23 @@
+services:
+  admin-service:
+    build: .
+    ports:
+      - "3003:3003"
+    environment:
+      - PORT=3003
+      - DB_HOST=mongodb
+      - DB_PORT=27017
+      - DB_USER=bachasoft
+      - DB_PASS=123654
+      - DB_NAME=bachasoft
+      - DB_POOL_SIZE=10
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - chat-service_heartlink-network
+    command: npm start
+
+networks:
+  chat-service_heartlink-network:
+    external: true

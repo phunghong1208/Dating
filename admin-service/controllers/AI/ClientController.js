@@ -6,8 +6,8 @@ const BaseController = require('../../Base');
 const Customer = require('../../models/Customer');
 const Image = require('../../models/Image');
 
-const { AI_API_KEY } = require('../../../config/ai.json');
-const Configs = require('../../../config');
+const { AI_API_KEY } = require('../../config/ai.json');
+const Configs = require('../../config');
 
 const ServiceSocket = require('../../services/socket');
 const { forEach } = require('lodash');

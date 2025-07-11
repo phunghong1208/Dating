@@ -13,7 +13,7 @@ module.exports = {
     unique: true,
   },
   clientIds: {
-    type: Array,
+    type: [String],
     index: true,
     default: [],
   }, // array customers._id

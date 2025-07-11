@@ -7,7 +7,7 @@ const {
   whoSeeYouTypes,
   distanceUnits,
   autoPlayVideoOpts,
-} = require('../../../config/common');
+} = require('../../config/common');
 const currentTime = () => Math.floor(Date.now() / 1000) * 1000;
 
 module.exports = {
