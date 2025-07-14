@@ -1,11 +1,34 @@
+version: '3.8'
+
 services:
-  # MongoDB Database
+  # Redis for caching, session, pub/sub
+  redis:
+    image: redis:7-alpine
+    container_name: heartlink-redis
+    restart: unless-stopped
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - heartlink-network
+    command: redis-server --maxmemory 1gb --maxmemory-policy allkeys-lru
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '0.5'
+        reservations:
+          memory: 512M
+          cpus: '0.25'
+
+  # Single MongoDB instance (standalone)
   mongodb:
     image: mongo:6.0
     container_name: heartlink-mongodb
     restart: unless-stopped
     ports:
-      - "27017:27017"
+      - "${DB_PORT:-27017}:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: bachasoft
       MONGO_INITDB_ROOT_PASSWORD: 123654
@@ -15,32 +38,117 @@ services:
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
     networks:
       - heartlink-network
-
-  # Chat Service
-  app-service:
-    build: .
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2.0'
+        reservations:
+          memory: 2G
+          cpus: '1.0'
+  admin-service:
+    build: ./admin-service
+    container_name: heartlink-admin-service
+    restart: unless-stopped
     ports:
-      - "3001:3001"
+      - "${ADMIN_SERVICE_PORT:-3003}:3003"
     environment:
-      - PORT=3001
+      - PORT=${ADMIN_SERVICE_PORT:-3003}
       - DB_HOST=mongodb
-      - DB_PORT=27017
+      - DB_PORT=${DB_PORT:-27017}
       - DB_USER=bachasoft
       - DB_PASS=123654
       - DB_NAME=bachasoft
-      - DB_POOL_SIZE=10
-    depends_on:
-      - mongodb
+      - DB_POOL_SIZE=100
+      - REDIS_HOST=redis
+      - REDIS_PORT=${REDIS_PORT:-6379}
     volumes:
-      - ./app-service:/app
-      - ./app-service/node_modules:/app/node_modules
+      - ./admin-service:/app
+      - /app/node_modules
     networks:
       - heartlink-network
-    command: npm start
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 1G
+          cpus: '0.5'
+    depends_on:
+      - mongodb
+      - redis
+
+  # App Service
+  app-service:
+    build: ./app-service
+    container_name: heartlink-app-service
+    restart: unless-stopped
+    ports:
+      - "${APP_SERVICE_PORT:-3001}:3001"
+    environment:
+      - PORT=${APP_SERVICE_PORT:-3001}
+      - DB_HOST=mongodb
+      - DB_PORT=${DB_PORT:-27017}
+      - DB_USER=bachasoft
+      - DB_PASS=123654
+      - DB_NAME=bachasoft
+      - DB_POOL_SIZE=100
+      - REDIS_HOST=redis
+      - REDIS_PORT=${REDIS_PORT:-6379}
+    volumes:
+      - ./app-service:/app
+      - /app/node_modules
+    networks:
+      - heartlink-network
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+          cpus: '1.5'
+        reservations:
+          memory: 2G
+          cpus: '1.0'
+    depends_on:
+      - mongodb
+      - redis
+  chat-service:
+    build: ./chat-service
+    container_name: heartlink-chat-service
+    restart: unless-stopped
+    ports:
+      - "${CHAT_SERVICE_PORT:-3002}:3002"
+    environment:
+      - PORT=${CHAT_SERVICE_PORT:-3002}
+      - DB_HOST=mongodb
+      - DB_PORT=${DB_PORT:-27017}
+      - DB_USER=bachasoft
+      - DB_PASS=123654
+      - DB_NAME=bachasoft
+      - DB_POOL_SIZE=100
+      - REDIS_HOST=redis
+      - REDIS_PORT=${REDIS_PORT:-6379}
+    volumes:
+      - ./chat-service:/app
+      - /app/node_modules
+    networks:
+      - heartlink-network
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+          cpus: '1.5'
+        reservations:
+          memory: 2G
+          cpus: '1.0'
+    depends_on:
+      - mongodb
+      - redis
 
 networks:
   heartlink-network:
     driver: bridge
 
 volumes:
-  mongodb-data:
+  redis-data:
+  mongodb-data: 

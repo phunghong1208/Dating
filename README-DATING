@@ -291,3 +291,7 @@ db.static_data.find().pretty()
 
 npx depcheck app-service
 npx madge --orphans app-service
+
+git add .
+git commit -m "push code"
+git push
