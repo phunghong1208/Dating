@@ -14,7 +14,11 @@
     "mv": "^2.1.1",
     "ulid": "^3.0.1"
   },
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
   "devDependencies": {
+    "nodemon": "^3.1.10",
     "typescript": "^5.8.3"
   }
 }

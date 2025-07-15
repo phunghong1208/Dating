@@ -294,4 +294,6 @@ npx madge --orphans app-service
 
 git add .
 git commit -m "push code"
-git push
+git push origin master
+
+docker-compose logs chat-service -f     

@@ -78,6 +78,7 @@ services:
     depends_on:
       - mongodb
       - redis
+    command: npm run dev
 
   # App Service
   app-service:
@@ -112,6 +113,7 @@ services:
     depends_on:
       - mongodb
       - redis
+    command: npm run dev
   chat-service:
     build: ./chat-service
     container_name: heartlink-chat-service
@@ -144,6 +146,7 @@ services:
     depends_on:
       - mongodb
       - redis
+    command: npm run dev
 
 networks:
   heartlink-network:
