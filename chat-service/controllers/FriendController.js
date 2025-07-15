@@ -23,7 +23,6 @@ class Controller extends BaseController {
 
   async index(req, res) {
     let [err, ret] = await to(this.getLists(req));
-    console.log('ret', ret);
     if (err) return this.throwInternalError(res, err);
     return this.success(res, { data: ret });
   }
@@ -45,8 +44,11 @@ class Controller extends BaseController {
       isMatched: true,
     };
     let options = this.handleFilter(req);
-  
-    let promises = [this.model.find()];
+    options = {
+      ...options,
+      lean: true
+    };
+    let promises = [this.model.find(cond, options)];
     if (options.pageSize > 0 && options.currentPage > -1) {
       promises.push(this.model.getCount(cond));
     }
@@ -57,7 +59,6 @@ class Controller extends BaseController {
       rs = [];
     }
     let data = Array.isArray(rs[0]) ? rs[0] : [];
-    console.log('data', data);
     let total = typeof rs[1] === 'number' ? rs[1] : data.length;
     let lists = [],
       friendIds = [],

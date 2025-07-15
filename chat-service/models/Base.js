@@ -106,8 +106,8 @@ class BaseModel {
     return this.getOne({ userId: { $in: ids } });
   }
 
+
   async getByUserId(condition) {
-    console.log('condition', condition);
     let list = this.find(condition);
     return list;
   }
@@ -135,24 +135,28 @@ class BaseModel {
     return result ? Utils.cloneObject(result) : result
   } */
 
-  async getOne(condition, options = null) {
-    options = options || {};
-    const selection = options.projection || this.projection;
-    const { lookup = false, raw = false } = options;
-    let query = this._model.findOne(
-      DBUtils.excludeSoftDelete(condition),
-      selection,
-    );
-    if (lookup && this.relations.length) {
-      this.relations.map(item => {
-        query.populate(item);
-      });
+    async getOne(condition, options = null) {
+      options = options || {};
+      const selection = options.projection || this.projection;
+      const { lookup = false, raw = false } = options;
+      let query = this._model.findOne(
+        DBUtils.excludeSoftDelete(condition),
+        selection,
+      );
+      if (lookup && this.relations?.length) {
+        this.relations.map(item => {
+          query.populate(item);
+        });
+      }
+      
+      try {
+        const result = await query.lean().exec(); // Thêm .lean()
+        if (raw) return result;
+        return result; 
+      } catch (error) {
+        throw Error(error.message);
+      }
     }
-    let [err, result] = await to(query);
-    if (err) throw Error(err.message);
-    if (raw) return result;
-    return result ? Utils.cloneObject(result) : result;
-  }
 
   async find(condition, options = null) {
     options = options || {};
@@ -164,12 +168,13 @@ class BaseModel {
         query.populate(item);
       });
     }
-    //query.select(selection);
+    query.select(selection);
     if (sorts) query.sort(sorts);
     if (pageSize > 0) {
       query.limit(pageSize);
       query.skip(currentPage * pageSize);
     }
+    query = query.lean();
     return await query;
   }
 
