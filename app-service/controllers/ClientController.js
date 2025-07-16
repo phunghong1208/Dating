@@ -85,6 +85,7 @@ class AuthController extends BaseController {
       ...requireParams,
       ...optionParams,
     ]);
+ 
     if (params.error) return HttpUtil.badRequest(res, params.error);
     params = Utils.getAcceptableFields(params, [
       ...requireParams,
@@ -409,13 +410,14 @@ class AuthController extends BaseController {
   async refreshToken(req, res) {
     let params = HttpUtil.getRequiredParamsFromJson2(req, ['refreshToken']);
     if (params.error) return HttpUtil.badRequest(res, params.error);
-
+    console.log("params", params.refreshToken);
     let [err, user] = await to(
       this.model.getOne(
         { _id: params.refreshToken },
         { projection: {}, lookup: true },
       ),
     );
+    console.log("user", user);
     if (err) {
       return HttpUtil.internalServerError(res, {
         msg: 'Found_Errors.user',

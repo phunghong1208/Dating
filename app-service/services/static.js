@@ -310,7 +310,7 @@ class Service extends BaseService {
     if (err) throw Error(err.message || err);
 
     let arrayPrompts = [];
-    rs[1].forEach(element => {
+    rs[0].forEach(element => {
       const findData = rs[0].filter(x => x.codeCategory === element.code);
       if (findData) {
         let modifiedArray = findData.map(item => {

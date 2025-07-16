@@ -25,8 +25,8 @@ class Base {
 
   handleFilter(req) {
     let { currentPage, pageSize, filters, sorting } = req.query;
-    currentPage = currentPage ? parseInt(currentPage) : 0;
-    pageSize = pageSize ? parseInt(pageSize) : 0;
+    currentPage = currentPage ? parseInt(currentPage) : 1;
+    pageSize = pageSize ? parseInt(pageSize) : 10;
     if (pageSize < 0) pageSize = -1;
     if (currentPage < 0) currentPage = 0;
     return { pageSize, currentPage, sorts: sorting };

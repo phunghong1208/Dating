@@ -97,7 +97,6 @@ class Service extends BaseService {
       delete options.filter;
     }
     let lists = [];
-    console.log("conditions", conditions);
     [err, lists] = await to(this.handleFilter(conditions, options, authUser));
 
     if (err) throw Error(err.message || err);
@@ -289,7 +288,6 @@ class Service extends BaseService {
 
   async handleFilter(conds, opts, authUser) {
     let [err, lists] = await to(this.model.getByConditions(conds, opts));
-    console.log("lists", lists);
     if (err) throw Error(err.message || err);
     return this.handleResult(lists, authUser);
   }

@@ -15,6 +15,7 @@ const ctrlStatic = require('../controllers/StaticController');
 const ctrlGuest = require('../controllers/GuestController');
 const ctrImage = require('../controllers/ImageController');
 const ctrPrompt = require('../controllers/PromptController');
+const ctrlClientAI = require('../AI/ClientController');
 
 /**
  * Application routes
@@ -47,6 +48,16 @@ module.exports = app => {
       
       // Lấy danh sách địa điểm/areas cho khách
       router.get('/areas', ctrlGuest.getLocations);
+    });
+
+    // Routes ai
+    router.group('/ai', router => {
+      router.group('/clients', router => {
+        router.get('/:uid', ctrlClientAI.getProfileWithoutAuth);
+        router.post('/verified', ctrlClientAI.verified);
+        router.post('/smart-photo', ctrlClientAI.aiUpdatePhotos);
+        router.post('/update-avatar-ai', ctrlClientAI.aiUpdateStatusImage);
+      });
     });
     
     // ==================== AUTHENTICATED APIs (Cần đăng nhập) ====================
